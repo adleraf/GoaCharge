@@ -1,0 +1,72 @@
+/* src/styles/layout.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 
+  The main cinematic grid layout for Desktop.
+  Left: Content (Hero, Features)
+  Right: Auth Panel
+  Background: Waves + Map
+*/
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  flex: 1;
+  z-index: 10;
+  position: relative;
+  padding: var(--spacing-xl) var(--spacing-md);
+  gap: var(--spacing-2xl);
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-xl);
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) {
+  .main-content {
+    padding: var(--spacing-2xl) var(--spacing-2xl);
+  }
+}
+
+/* Desktop Split Layout */
+@media (min-width: 1024px) {
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+    padding: var(--spacing-3xl) 5vw;
+    gap: 4vw;
+  }
+
+  .left-column {
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .right-column {
+    justify-content: flex-end;
+  }
+}
