@@ -75,3 +75,8 @@
   animation: wave-drift-3 25s linear infinite;
   bottom: -20px;
 }
+.goa-map {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
