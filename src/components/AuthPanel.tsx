@@ -1,15 +1,19 @@
 import { useState } from 'react';
 
-export const AuthPanel: React.FC = () => {
+interface AuthPanelProps {
+  onLogin: () => void;
+}
+
+export const AuthPanel: React.FC<AuthPanelProps> = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Intentionally left blank as per requirements
-    console.log('Login attempt', { email });
-  };
+  e.preventDefault();
+  console.log("Login attempt", { email });
+  onLogin();
+};
 
   return (
     <div className="glass-panel animate-fade-in-up delay-200" style={{ padding: '2rem', width: '100%', maxWidth: '420px' }}>
@@ -83,9 +87,13 @@ export const AuthPanel: React.FC = () => {
           or
         </div>
 
-        <button type="button" className="btn btn-secondary">
-          Continue as Guest
-        </button>
+        <button
+         type="button"
+  className="btn btn-secondary"
+  onClick={onLogin}
+>
+  Continue as Guest
+</button> 
       </form>
     </div>
   );

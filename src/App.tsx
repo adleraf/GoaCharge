@@ -1,4 +1,5 @@
-
+import { useState } from "react";
+import { Explore } from "./pages/Explore";
 import { Brand } from './components/Brand';
 import { Hero } from './components/Hero';
 import { FeatureHighlights } from './components/FeatureHighlights';
@@ -14,6 +15,12 @@ import './styles/animations.css';
 import './styles/map.css';
 
 function App() {
+  const [showExplore, setShowExplore] = useState(false);
+
+  if (showExplore) {
+    return <Explore />;
+  }
+
   return (
     <div className="app-container">
       {/* Background Layers */}
@@ -35,7 +42,7 @@ function App() {
 
         {/* Right / Bottom Section */}
         <div className="right-column">
-          <AuthPanel />
+          <AuthPanel onLogin={() => setShowExplore(true)} />
         </div>
       </main>
     </div>
