@@ -3,6 +3,7 @@ import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { GoaChargeStation } from "../types/station";
 import type { RouteData } from "../services/routeService";
+import type { UserCoords } from "../hooks/useGeolocation";
 
 interface GoaMapProps {
   stations: GoaChargeStation[];
@@ -12,6 +13,12 @@ interface GoaMapProps {
   activeRoute?: RouteData | null;
   isNavigating?: boolean;
   onFitRoute?: () => void;
+  /** Live user position from geolocation (null when unavailable) */
+  userLocation?: UserCoords | null;
+  /** Whether geolocation watch is currently active */
+  isLocating?: boolean;
+  /** Called when user clicks the "Near Me" button */
+  onToggleNearMe?: () => void;
 }
 
 const GOA_CENTER: [number, number] = [74.05, 15.35];
@@ -24,6 +31,9 @@ export default function GoaMap({
   flyToCoords,
   activeRoute,
   isNavigating = false,
+  userLocation,
+  isLocating = false,
+  onToggleNearMe,
 }: GoaMapProps) {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const map = useRef<maplibregl.Map | null>(null);
@@ -31,9 +41,11 @@ export default function GoaMap({
     new Map()
   );
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
+  const nearMeMarkerRef = useRef<maplibregl.Marker | null>(null);
   const perimeterAnimRef = useRef<number | null>(null);
   const stateLabelMarkerRef = useRef<maplibregl.Marker | null>(null);
   const pulseGoaBoundaryRef = useRef<(() => void) | null>(null);
+  const hasFlownToUserRef = useRef(false);
 
   // Initialize MapLibre
   useEffect(() => {
@@ -717,6 +729,52 @@ export default function GoaMap({
     }
   }, [isNavigating, activeRoute]);
 
+  // ── Render / Update the "Near Me" user location marker on the map ────
+  useEffect(() => {
+    if (!map.current) return;
+
+    if (userLocation) {
+      const lngLat: [number, number] = [userLocation.longitude, userLocation.latitude];
+
+      if (!nearMeMarkerRef.current) {
+        // Create a new user-location marker with pulsing animation
+        const el = document.createElement("div");
+        el.className = "nearme-user-marker";
+        el.innerHTML = `
+          <div class="nearme-pulse-ring"></div>
+          <div class="nearme-pulse-ring nearme-pulse-ring-2"></div>
+          <div class="nearme-accuracy-circle"></div>
+          <div class="nearme-dot">
+            <div class="nearme-dot-core"></div>
+          </div>
+        `;
+        nearMeMarkerRef.current = new maplibregl.Marker({ element: el, anchor: "center" })
+          .setLngLat(lngLat)
+          .addTo(map.current);
+      } else {
+        nearMeMarkerRef.current.setLngLat(lngLat);
+      }
+
+      // Fly to user on first fix only
+      if (!hasFlownToUserRef.current) {
+        hasFlownToUserRef.current = true;
+        map.current.flyTo({
+          center: lngLat,
+          zoom: 13,
+          essential: true,
+          duration: 1200,
+        });
+      }
+    } else {
+      // Remove marker when location tracking stops
+      if (nearMeMarkerRef.current) {
+        nearMeMarkerRef.current.remove();
+        nearMeMarkerRef.current = null;
+        hasFlownToUserRef.current = false;
+      }
+    }
+  }, [userLocation]);
+
   // Reset to full Goa view
   const handleResetGoa = () => {
     if (!map.current) return;
@@ -750,6 +808,31 @@ export default function GoaMap({
           </svg>
           <span>Focus Goa</span>
         </button>
+
+        {/* Near Me toggle button */}
+        {onToggleNearMe && (
+          <button
+            className={`map-control-btn nearme-btn ${isLocating ? "active" : ""}`}
+            onClick={onToggleNearMe}
+            title={isLocating ? "Stop tracking location" : "Find chargers near me"}
+            aria-label={isLocating ? "Stop tracking location" : "Find chargers near me"}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              {isLocating ? (
+                <>
+                  <circle cx="12" cy="12" r="3" fill="currentColor" />
+                  <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+                </>
+              ) : (
+                <>
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+                </>
+              )}
+            </svg>
+            <span>{isLocating ? "Tracking" : "Near Me"}</span>
+          </button>
+        )}
       </div>
     </div>
   );

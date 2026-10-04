@@ -1,10 +1,13 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import GoaMap from "../components/GoaMap";
 import { Sidebar } from "../components/Sidebar";
 import { TopBar, type FilterType } from "../components/TopBar";
 import { BottomStats } from "../components/BottomStats";
 import { StationDetailCard } from "../components/StationDetailCard";
+import { NearestChargerCard } from "../components/NearestChargerCard";
 import { fetchChargers } from "../services/chargerService";
+import { useGeolocation } from "../hooks/useGeolocation";
+import { findNearestStation, type NearestResult } from "../utils/geoUtils";
 import type { GoaChargeStation } from "../types/station";
 import "../styles/explore.css";
 
@@ -18,6 +21,40 @@ export function Explore() {
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
   const [flyToCoords, setFlyToCoords] = useState<[number, number] | null>(null);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
+
+  // ── Geolocation / Near Me ─────────────────────────────────────────
+  const geo = useGeolocation();
+  const [nearMeActive, setNearMeActive] = useState(false);
+  const [nearMeDismissed, setNearMeDismissed] = useState(false);
+
+  // Compute nearest station whenever user position or station list changes
+  const nearestResult: NearestResult | null = useMemo(() => {
+    if (!nearMeActive || !geo.coords || allStations.length === 0) return null;
+    return findNearestStation(geo.coords.latitude, geo.coords.longitude, allStations);
+  }, [nearMeActive, geo.coords, allStations]);
+
+  const handleToggleNearMe = useCallback(() => {
+    if (nearMeActive) {
+      // Stop
+      geo.stopWatching();
+      setNearMeActive(false);
+      setNearMeDismissed(false);
+    } else {
+      // Start
+      geo.startWatching();
+      setNearMeActive(true);
+      setNearMeDismissed(false);
+    }
+  }, [nearMeActive, geo]);
+
+  const handleNearMeGoThere = useCallback(() => {
+    if (!nearestResult) return;
+    handleSelectStation(nearestResult.station);
+  }, [nearestResult]);
+
+  const handleNearMeDismiss = useCallback(() => {
+    setNearMeDismissed(true);
+  }, []);
 
   // Fetch real Goa charging stations from our backend proxy
   useEffect(() => {
@@ -125,8 +162,28 @@ export function Explore() {
             selectedStationId={selectedStation?.ocmId ?? null}
             onSelectStation={handleSelectStation}
             flyToCoords={flyToCoords}
+            userLocation={nearMeActive ? geo.coords : null}
+            isLocating={nearMeActive && geo.isWatching}
+            onToggleNearMe={handleToggleNearMe}
           />
         </div>
+
+        {/* Nearest Charger Card (from Near Me feature) */}
+        {nearMeActive && nearestResult && !nearMeDismissed && (
+          <NearestChargerCard
+            station={nearestResult.station}
+            distanceKm={nearestResult.distanceKm}
+            onGoThere={handleNearMeGoThere}
+            onDismiss={handleNearMeDismiss}
+          />
+        )}
+
+        {/* Geolocation error toast */}
+        {nearMeActive && geo.error && (
+          <div className="explore-nearme-error-toast" role="alert">
+            <span>📍 {geo.error}</span>
+          </div>
+        )}
 
         {/* Selected Station Detail Panel */}
         {selectedStation && (

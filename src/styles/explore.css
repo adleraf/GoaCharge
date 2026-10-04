@@ -1140,3 +1140,294 @@
   line-height: 1;
 }
 
+/* ==========================================================================
+   Near Me Feature — User Location Marker
+   ========================================================================== */
+
+.nearme-user-marker {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 45;
+}
+
+/* Outer pulsing ring — expands outward */
+.nearme-pulse-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(59, 130, 246, 0.6);
+  transform: translate(-50%, -50%) scale(1);
+  animation: nearme-pulse-expand 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.nearme-pulse-ring-2 {
+  animation-delay: 1s;
+}
+
+@keyframes nearme-pulse-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+/* Accuracy halo — static subtle circle */
+.nearme-accuracy-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.1);
+  transform: translate(-50%, -50%);
+}
+
+/* Core dot */
+.nearme-dot {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+}
+
+.nearme-dot-core {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3b82f6;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+/* --------------------------------------------------------------------------
+   Near Me Button — Active State
+   -------------------------------------------------------------------------- */
+.nearme-btn.active {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: #3b82f6;
+  color: #60a5fa;
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.25);
+}
+
+.nearme-btn.active:hover {
+  background: rgba(59, 130, 246, 0.3);
+  color: #93bbfd;
+  border-color: #60a5fa;
+}
+
+/* --------------------------------------------------------------------------
+   Nearest Charger Card — Floating overlay
+   -------------------------------------------------------------------------- */
+.nearest-charger-card {
+  position: absolute;
+  bottom: 5.5rem;
+  left: 1.5rem;
+  z-index: 55;
+  width: 280px;
+  max-width: calc(100vw - 3rem);
+  background: rgba(11, 19, 30, 0.92);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5), 0 0 20px rgba(59, 130, 246, 0.1);
+  overflow: hidden;
+  animation: nc-slide-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes nc-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Header */
+.nc-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.75rem 0.875rem 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nc-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  flex-shrink: 0;
+}
+
+.nc-title-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.nc-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #60a5fa;
+}
+
+.nc-distance {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.nc-dismiss-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+}
+
+.nc-dismiss-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Card Body */
+.nc-body {
+  padding: 0.625rem 0.875rem;
+}
+
+.nc-station-name {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.nc-info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.nc-power-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(94, 234, 212, 0.12);
+  color: var(--accent-teal);
+  border: 1px solid rgba(94, 234, 212, 0.25);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.nc-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.nc-status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Go There Button */
+.nc-go-there-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 0.55rem 1rem;
+  background: rgba(59, 130, 246, 0.15);
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #60a5fa;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.nc-go-there-btn:hover {
+  background: rgba(59, 130, 246, 0.25);
+  color: #93bbfd;
+}
+
+/* --------------------------------------------------------------------------
+   Geolocation Error Toast
+   -------------------------------------------------------------------------- */
+.explore-nearme-error-toast {
+  position: absolute;
+  bottom: 5.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(251, 146, 60, 0.9);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  z-index: 70;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive: Nearest Charger Card on Mobile
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nearest-charger-card {
+    bottom: 4rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
