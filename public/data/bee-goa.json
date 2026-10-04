@@ -1,0 +1,3507 @@
+[
+  {
+    "id": "bee-ather-15.008299-74.07144",
+    "name": "5, 355/3, Near Canacona Industrial Estate, Canacona Industrial Estate,\nCanacona, Goa 403702",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "5, 355/3, Near Canacona Industrial Estate, Canacona Industrial Estate,\nCanacona, Goa 403702",
+    "latitude": 15.008299,
+    "longitude": 74.07144,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.008472-74.042604",
+    "name": "Near Ktc Bus Stand Bernard Bab Complex, Opp. Omkar Building, Nagorcem,\nCanacona, Goa 403702",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Near Ktc Bus Stand Bernard Bab Complex, Opp. Omkar Building, Nagorcem,\nCanacona, Goa 403702",
+    "latitude": 15.008472,
+    "longitude": 74.042604,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.151791-74.018936",
+    "name": "Balli. Near Primary Health Centre. Near Railway Station. Balli Cuncolim, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Balli. Near Primary Health Centre. Near Railway Station. Balli Cuncolim, Goa",
+    "latitude": 15.151791,
+    "longitude": 74.018936,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.181228-73.998217",
+    "name": "Bus Stand, Shop No 6&7,Grace Enclave, Near Ktc, Cuncolim, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Bus Stand, Shop No 6&7,Grace Enclave, Near Ktc, Cuncolim, Goa",
+    "latitude": 15.181228,
+    "longitude": 73.998217,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.214808-73.983818",
+    "name": "H.No617 Dandeavddo Chinchinim Salcete ,South Goa Margao 403715 Goa\nIndia",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "H.No617 Dandeavddo Chinchinim Salcete ,South Goa Margao 403715 Goa\nIndia",
+    "latitude": 15.214808,
+    "longitude": 73.983818,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.223143-73.944094",
+    "name": "466, Gunea Vaddo, Ramada Caravel Rd. , Fatrade Rd., Varca, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "466, Gunea Vaddo, Ramada Caravel Rd. , Fatrade Rd., Varca, Goa",
+    "latitude": 15.223143,
+    "longitude": 73.944094,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.225126-73.979533",
+    "name": "590/Iii-A, Caramorod, Chinchinim, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "590/Iii-A, Caramorod, Chinchinim, Goa",
+    "latitude": 15.225126,
+    "longitude": 73.979533,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.255023-73.993668",
+    "name": "Poonam Residency, Shop No. 8, Lakaki, Dicarpale, Navelim, Saclcete",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Poonam Residency, Shop No. 8, Lakaki, Dicarpale, Navelim, Saclcete",
+    "latitude": 15.255023,
+    "longitude": 73.993668,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.265105-73.959943",
+    "name": "Shop No G1&G2,Ground Floor,Draupadi Apartment Opp Kenker Engineering\nWorkshop,Sirvodem, Margao, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Shop No G1&G2,Ground Floor,Draupadi Apartment Opp Kenker Engineering\nWorkshop,Sirvodem, Margao, Goa",
+    "latitude": 15.265105,
+    "longitude": 73.959943,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.269764-73.95495",
+    "name": "City Plaza, Phase 2, Pedda, Margao, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "City Plaza, Phase 2, Pedda, Margao, Goa",
+    "latitude": 15.269764,
+    "longitude": 73.95495,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.272316-73.971892",
+    "name": "Aquem Alto, Margao, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Aquem Alto, Margao, Goa",
+    "latitude": 15.272316,
+    "longitude": 73.971892,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.282426-73.961726",
+    "name": "St Joaquim Road, Borda, Margao, Goa 403601",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "St Joaquim Road, Borda, Margao, Goa 403601",
+    "latitude": 15.282426,
+    "longitude": 73.961726,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.284851-73.977387",
+    "name": "Shop No As 13, 14, Block No A, Building Gogol Vista, Near Caro Central,\nSouth Goa 403602",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Shop No As 13, 14, Block No A, Building Gogol Vista, Near Caro Central,\nSouth Goa 403602",
+    "latitude": 15.284851,
+    "longitude": 73.977387,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-ather-15.296113-73.973946",
+    "name": "Cross Road Avenues, Arlem, Margao, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Cross Road Avenues, Arlem, Margao, Goa",
+    "latitude": 15.296113,
+    "longitude": 73.973946,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-ather-15.339167-74.015849",
+    "name": "Fiona Enterprises, Curchorem - Ponda Rd, Shiroda, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Fiona Enterprises, Curchorem - Ponda Rd, Shiroda, Goa",
+    "latitude": 15.339167,
+    "longitude": 74.015849,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.3881-73.861907",
+    "name": "H No. 174/2-A-(10), Garage, Near Mes Collage, Zuarinagar, Sancoale",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "H No. 174/2-A-(10), Garage, Near Mes Collage, Zuarinagar, Sancoale",
+    "latitude": 15.3881,
+    "longitude": 73.861907,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.390716-73.849207",
+    "name": "Nh 17, Next To Dominos, Dabolim, Goa 403711",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Nh 17, Next To Dominos, Dabolim, Goa 403711",
+    "latitude": 15.390716,
+    "longitude": 73.849207,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.39959-74.01732",
+    "name": "Opp Market Yard Bethoda Road, Ponda, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Opp Market Yard Bethoda Road, Ponda, Goa",
+    "latitude": 15.39959,
+    "longitude": 74.01732,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.400226-74.004356",
+    "name": "Hp Petrol Pump,Survey No- 34/1, Ponda Market Road, A/P.- Ponda, Near Old\nBusstand, Tal-Ponda, District-North Goa, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Hp Petrol Pump,Survey No- 34/1, Ponda Market Road, A/P.- Ponda, Near Old\nBusstand, Tal-Ponda, District-North Goa, Goa",
+    "latitude": 15.400226,
+    "longitude": 74.004356,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.40487-74.00618",
+    "name": "Shop No. 05, Shantai Niwas, Warkhande,, Ponda - Goa 403401, Ponda, Goa\n403401",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Shop No. 05, Shantai Niwas, Warkhande,, Ponda - Goa 403401, Ponda, Goa\n403401",
+    "latitude": 15.40487,
+    "longitude": 74.00618,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.4099-73.992809",
+    "name": "Saiyog Solar Water Heater, Donshiwado, Bandoda, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Saiyog Solar Water Heater, Donshiwado, Bandoda, Goa",
+    "latitude": 15.4099,
+    "longitude": 73.992809,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.494327-73.819328",
+    "name": "Bubble Cafe Shop No 4, Pereira Building, Opp. Indusind Bank, St.Inez Panaji\nGoa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Bubble Cafe Shop No 4, Pereira Building, Opp. Indusind Bank, St.Inez Panaji\nGoa",
+    "latitude": 15.494327,
+    "longitude": 73.819328,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      145
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.500049-73.914127",
+    "name": "Near Old Goa Fire Brigade, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Near Old Goa Fire Brigade, Goa",
+    "latitude": 15.500049,
+    "longitude": 73.914127,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.523066-73.825913",
+    "name": "\u0011ĞƚŝŵͲWŽŵďƵƌƉĂ\u0003ZĚ͕\u0003\u0004ůƚŽͲ\u0003\u0011Ğƚŝŵ\u0003WŽƌǀŽƌŝŵ͕\u0003WĞŶŚĂ\u0003\u0018Ğ\u0003&ƌĂŶĕĂ͕\u0003'ŽĂ",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "\u0011ĞƚŝŵͲWŽŵďƵƌƉĂ\u0003ZĚ͕\u0003\u0004ůƚŽͲ\u0003\u0011Ğƚŝŵ\u0003WŽƌǀŽƌŝŵ͕\u0003WĞŶŚĂ\u0003\u0018Ğ\u0003&ƌĂŶĕĂ͕\u0003'ŽĂ",
+    "latitude": 15.523066,
+    "longitude": 73.825913,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-ather-15.530591-73.824957",
+    "name": "Nh 66, Govekar Nagar, Sangolda, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Nh 66, Govekar Nagar, Sangolda, Goa",
+    "latitude": 15.530591,
+    "longitude": 73.824957,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.544059-73.769174",
+    "name": "Naika Wado, Calangute, Near St. Alex Church, Calangute, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Naika Wado, Calangute, Near St. Alex Church, Calangute, Goa",
+    "latitude": 15.544059,
+    "longitude": 73.769174,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.545113-73.77079",
+    "name": "Hpcl Esmeralda Barretom, Calangute - Mapusa Rd, Calangute, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Hpcl Esmeralda Barretom, Calangute - Mapusa Rd, Calangute, Goa",
+    "latitude": 15.545113,
+    "longitude": 73.77079,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.551642-73.77191",
+    "name": "Rohit Car Wash, Porbawaddo Calangute, Bardez, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Rohit Car Wash, Porbawaddo Calangute, Bardez, Goa",
+    "latitude": 15.551642,
+    "longitude": 73.77191,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.557838-74.018856",
+    "name": "Gokulwadi, Sesa Colony, Desai Nagar, Sanquelim, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Gokulwadi, Sesa Colony, Desai Nagar, Sanquelim, Goa",
+    "latitude": 15.557838,
+    "longitude": 74.018856,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.566756-73.764897",
+    "name": "Arpora, Calangute - Arpora Rd, Near Saturday Night Bazaar, Calangute, Goa\n403516",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Arpora, Calangute - Arpora Rd, Near Saturday Night Bazaar, Calangute, Goa\n403516",
+    "latitude": 15.566756,
+    "longitude": 73.764897,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-ather-15.570625-73.791587",
+    "name": "Jackni Vaddo, Parra, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Jackni Vaddo, Parra, Goa",
+    "latitude": 15.570625,
+    "longitude": 73.791587,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.587867-73.749566",
+    "name": "Panchayat Road 403509, Gumal Vaddo, Anjuna, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Panchayat Road 403509, Gumal Vaddo, Anjuna, Goa",
+    "latitude": 15.587867,
+    "longitude": 73.749566,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.591932-73.771787",
+    "name": "H.No.452, Near Happy Bar, Bouta Waddo, Assagao, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "H.No.452, Near Happy Bar, Bouta Waddo, Assagao, Goa",
+    "latitude": 15.591932,
+    "longitude": 73.771787,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.612208-73.827922",
+    "name": "Near Industrial Estate Gate, Acoi Village, Goa 403519",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Near Industrial Estate Gate, Acoi Village, Goa 403519",
+    "latitude": 15.612208,
+    "longitude": 73.827922,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.614203-73.814241",
+    "name": "H.No. 106, Mapusa - Duler - Camurlim Rd, Near Our Lady Of Flight Church,\nCunchelim, Mapusa, Goa,403507",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "H.No. 106, Mapusa - Duler - Camurlim Rd, Near Our Lady Of Flight Church,\nCunchelim, Mapusa, Goa,403507",
+    "latitude": 15.614203,
+    "longitude": 73.814241,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.61526-73.780813",
+    "name": "Viktoria Homes, Siolim, Marna, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Viktoria Homes, Siolim, Marna, Goa",
+    "latitude": 15.61526,
+    "longitude": 73.780813,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.619488-73.735065",
+    "name": "La Vaiencia Beach Resort, Tembwada, Morjim Beach, Pernem, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "La Vaiencia Beach Resort, Tembwada, Morjim Beach, Pernem, Goa",
+    "latitude": 15.619488,
+    "longitude": 73.735065,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.623169-73.76801",
+    "name": "Near Sfx School, Bammon Vaddo, Siolim, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Near Sfx School, Bammon Vaddo, Siolim, Goa",
+    "latitude": 15.623169,
+    "longitude": 73.76801,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ather-15.712302-73.810938",
+    "name": "Shop No. 2 Malpe, Pernem, Goa",
+    "operator": "Ather",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Shop No. 2 Malpe, Pernem, Goa",
+    "latitude": 15.712302,
+    "longitude": 73.810938,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-7)",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-eesl-15.510472-73.837222",
+    "name": "Eesl Edc Parking Goa",
+    "operator": "EESL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Panaji",
+    "address": "Eesl Edc Parking Goa",
+    "latitude": 15.510472,
+    "longitude": 73.837222,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Combo (CCS-II + CHAdeMo +\nType II)",
+        "charger_rating": 122.0,
+        "connector_rating": null,
+        "number_of_connectors": 3
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-eesl-15.5108-73.8368",
+    "name": "Secretariat Office, Goa",
+    "operator": "EESL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Panaji",
+    "address": "Secretariat Office, Goa",
+    "latitude": 15.5108,
+    "longitude": 73.8368,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Combo (CCS-II + CHAdeMo +\nType II)",
+        "charger_rating": 122.0,
+        "connector_rating": null,
+        "number_of_connectors": 3
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-eesl-15.5937-73.8142",
+    "name": "The Mamlatdar Office Mapusa Goa",
+    "operator": "EESL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Mapusa",
+    "address": "The Mamlatdar Office Mapusa Goa",
+    "latitude": 15.5937,
+    "longitude": 73.8142,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Combo (CCS-II + CHAdeMo +\nType II)",
+        "charger_rating": 122.0,
+        "connector_rating": null,
+        "number_of_connectors": 3
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-hpcl-15.249396-73.970409",
+    "name": "Navelim",
+    "operator": "HPCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Navelim",
+    "latitude": 15.249396,
+    "longitude": 73.970409,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.0,
+        "connector_rating": 7.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-hpcl-15.36163-73.92734",
+    "name": "Verna, Goa",
+    "operator": "HPCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Verna, Goa",
+    "latitude": 15.36163,
+    "longitude": 73.92734,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-hyundai-15.400083-73.822833",
+    "name": "Laxmi Petroleum",
+    "operator": "Hyundai",
+    "ownership": "Private",
+    "district": "South Goa",
+    "cityOrVillage": "Vasco De Gama",
+    "address": "Laxmi Petroleum",
+    "latitude": 15.400083,
+    "longitude": 73.822833,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 50.0,
+        "connector_rating": 50.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.397872-73.83793",
+    "name": "\"Village Chicalim\" \"Nh-17 Mormugao Taluka\" \"Nh-17 Mormugao Taluka\"",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "\"Village Chicalim\" \"Nh-17 Mormugao Taluka\" \"Nh-17 Mormugao Taluka\"",
+    "latitude": 15.397872,
+    "longitude": 73.83793,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.365011-74.17219",
+    "name": "\"Village Suktali Sangod\" \"Sanguem Goa\" \"Sanguem Goa\"",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "\"Village Suktali Sangod\" \"Sanguem Goa\" \"Sanguem Goa\"",
+    "latitude": 15.365011,
+    "longitude": 74.17219,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.622471-73.88554",
+    "name": "50 Muncipal Market Mapusa Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "50 Muncipal Market Mapusa Goa",
+    "latitude": 15.622471,
+    "longitude": 73.88554,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.187579-73.970708",
+    "name": "Chinchinim Tal: Salcette South Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Chinchinim Tal: Salcette South Goa",
+    "latitude": 15.187579,
+    "longitude": 73.970708,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV AC Charge point",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.41746-74.06591",
+    "name": "Ghotmod Usgao Taluka: Ponda Dist- South Goa Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Ghotmod Usgao Taluka: Ponda Dist- South Goa Goa",
+    "latitude": 15.41746,
+    "longitude": 74.06591,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV AC Charge point",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.548917-74.04355",
+    "name": "I.O.C. Petrol Pump Dealer Honda Sattari Goa.",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "I.O.C. Petrol Pump Dealer Honda Sattari Goa.",
+    "latitude": 15.548917,
+    "longitude": 74.04355,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.37458-73.925972",
+    "name": "Indian Oil Coco Ro Nh 17 - Madgaon - Panaji Road Verna",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Indian Oil Coco Ro Nh 17 - Madgaon - Panaji Road Verna",
+    "latitude": 15.37458,
+    "longitude": 73.925972,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.37638-74.22812",
+    "name": "Indian Oil Coco Ro Nh 4A Mollem Goa-Belgaumhubli Highway",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Indian Oil Coco Ro Nh 4A Mollem Goa-Belgaumhubli Highway",
+    "latitude": 15.37638,
+    "longitude": 74.22812,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.442535-73.97483",
+    "name": "Indian Oil Dealer Nh.4-A Village Priol Tal-Pondanorth Goa Village Priol\nTal-Pondanorth Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Indian Oil Dealer Nh.4-A Village Priol Tal-Pondanorth Goa Village Priol\nTal-Pondanorth Goa",
+    "latitude": 15.442535,
+    "longitude": 73.97483,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.495227-73.83914",
+    "name": "Indian Oil Dealer Opp: Kadamba Bus Terminus Panjim Goa.",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Indian Oil Dealer Opp: Kadamba Bus Terminus Panjim Goa.",
+    "latitude": 15.495227,
+    "longitude": 73.83914,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      146
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.376395-73.88105",
+    "name": "Indian Oil Dealer Zuarinagarsancoale Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Indian Oil Dealer Zuarinagarsancoale Goa",
+    "latitude": 15.376395,
+    "longitude": 73.88105,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.142565-73.954836",
+    "name": "Indian Oil Dealers Bapsoro Velim Taluka- Salcete",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Indian Oil Dealers Bapsoro Velim Taluka- Salcete",
+    "latitude": 15.142565,
+    "longitude": 73.954836,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.626457-73.958303",
+    "name": "Indian Oil Dealers Ladfe Latambarcem",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Indian Oil Dealers Ladfe Latambarcem",
+    "latitude": 15.626457,
+    "longitude": 73.958303,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.496933-73.92807",
+    "name": "Indian Oil Dealers National Highway Nh-4A. Corlim Ilhas Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Indian Oil Dealers National Highway Nh-4A. Corlim Ilhas Goa",
+    "latitude": 15.496933,
+    "longitude": 73.92807,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.248932-73.93686",
+    "name": "Mazilwado Benaulim Salcete South Goa Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Mazilwado Benaulim Salcete South Goa Goa",
+    "latitude": 15.248932,
+    "longitude": 73.93686,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV AC Charge point",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-14.94149-74.05951",
+    "name": "Nh-17 Maxem - Lolieum Canacona Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Nh-17 Maxem - Lolieum Canacona Goa",
+    "latitude": 14.94149,
+    "longitude": 74.05951,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.693748-73.79709",
+    "name": "Pernem Pernem-Agarwado Dist- North Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Pernem Pernem-Agarwado Dist- North Goa",
+    "latitude": 15.693748,
+    "longitude": 73.79709,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV AC Charge point",
+        "charger_rating": 3.3,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.487296-73.902536",
+    "name": "Survey No- 25/1 Village- Bainguini Tal: Tiswadi Dist- North Goa Goa- 403107",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Survey No- 25/1 Village- Bainguini Tal: Tiswadi Dist- North Goa Goa- 403107",
+    "latitude": 15.487296,
+    "longitude": 73.902536,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.112065-74.035858",
+    "name": "Survey No- 25/1-Ar Village- Cordem Tal: Quepem Dist- South Goa State: Goa\nPin: 403706",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Survey No- 25/1-Ar Village- Cordem Tal: Quepem Dist- South Goa State: Goa\nPin: 403706",
+    "latitude": 15.112065,
+    "longitude": 74.035858,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.439803-73.87328",
+    "name": "Survey No. 183/13 Near Football Ground Agassim-Bambolim Goa Velha",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Survey No. 183/13 Near Football Ground Agassim-Bambolim Goa Velha",
+    "latitude": 15.439803,
+    "longitude": 73.87328,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.430955-74.07906",
+    "name": "Survey No.227/1-A Vill Usgaon Taluka Ponda Sh-03",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Survey No.227/1-A Vill Usgaon Taluka Ponda Sh-03",
+    "latitude": 15.430955,
+    "longitude": 74.07906,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.27925-73.937629",
+    "name": "Survey No.44/2A Vill-Seraulim Colva Beach Road",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Survey No.44/2A Vill-Seraulim Colva Beach Road",
+    "latitude": 15.27925,
+    "longitude": 73.937629,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-iocl-15.508383-73.96168",
+    "name": "Tivre-Orgao Marcel North Goa Goa North Goa Goa",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Tivre-Orgao Marcel North Goa Goa North Goa Goa",
+    "latitude": 15.508383,
+    "longitude": 73.96168,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-iocl-15.240984-74.09751",
+    "name": "Village Xeldem \"Tal : Quepem South Goa Goa\" South Goa Goa\"",
+    "operator": "IOCL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Village Xeldem \"Tal : Quepem South Goa Goa\" South Goa Goa\"",
+    "latitude": 15.240984,
+    "longitude": 74.09751,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-nikol-15.5576-73.7803",
+    "name": "Mendes Vaddo, 36/1- C, Nagva, Bardez, Goa 403519",
+    "operator": "Nikol",
+    "ownership": "Private",
+    "district": "South Goa",
+    "cityOrVillage": "Nagoa",
+    "address": "Mendes Vaddo, 36/1- C, Nagva, Bardez, Goa 403519",
+    "latitude": 15.5576,
+    "longitude": 73.7803,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-nikol-15.5519-73.7721",
+    "name": "Porba Vaddo, Prabhu wada, Calangute, Goa, 403516",
+    "operator": "Nikol",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Calangute",
+    "address": "Porba Vaddo, Prabhu wada, Calangute, Goa, 403516",
+    "latitude": 15.5519,
+    "longitude": 73.7721,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-ola-15.49532-73.82106",
+    "name": "Near Don Bosco School,Near Don Bosco School,North Goa",
+    "operator": "OLA",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Panjim",
+    "address": "Near Don Bosco School,Near Don Bosco School,North Goa",
+    "latitude": 15.49532,
+    "longitude": 73.82106,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC Charge Point\n(IS-17017-2-6)",
+        "charger_rating": 7.0,
+        "connector_rating": 7.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-reil-15.54392-73.78039",
+    "name": "Calangute, Calangute, North Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Calangute",
+    "address": "Calangute, Calangute, North Goa",
+    "latitude": 15.54392,
+    "longitude": 73.78039,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147,
+      148
+    ],
+    "sourceRecordCount": 9
+  },
+  {
+    "id": "bee-reil-15.395847-74.116502",
+    "name": "Chaitanya Petroleum,Tamsoda Dharbandora Village Taluka Sanguem",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Sanguem",
+    "address": "Chaitanya Petroleum,Tamsoda Dharbandora Village Taluka Sanguem",
+    "latitude": 15.395847,
+    "longitude": 74.116502,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-reil-15.27454-73.95726",
+    "name": "Comba, Margao, Goa 403601",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "Margao",
+    "address": "Comba, Margao, Goa 403601",
+    "latitude": 15.27454,
+    "longitude": 73.95726,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reil-15.635267-73.829533",
+    "name": "Goa Auto Services,Indian Oil Dealer National Highway No.17 Colvale Goa.",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Goa Auto Services,Indian Oil Dealer National Highway No.17 Colvale Goa.",
+    "latitude": 15.635267,
+    "longitude": 73.829533,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-reil-15.584953-73.959626",
+    "name": "Govekar Petroleum,Sarvan Bicholim Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Bicholim",
+    "address": "Govekar Petroleum,Sarvan Bicholim Goa",
+    "latitude": 15.584953,
+    "longitude": 73.959626,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-reil-15.28294-73.98021",
+    "name": "Housing Colony Road,Vidya Nagarsouth Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "Margao",
+    "address": "Housing Colony Road,Vidya Nagarsouth Goa",
+    "latitude": 15.28294,
+    "longitude": 73.98021,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147,
+      148
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reil-15.48772-73.90554",
+    "name": "Kadamba Road,Ribander,North Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Old Goa",
+    "address": "Kadamba Road,Ribander,North Goa",
+    "latitude": 15.48772,
+    "longitude": 73.90554,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147,
+      148
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reil-15.61441-73.82236",
+    "name": "Karaswaddo,Mapusa,North Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Mapusa",
+    "address": "Karaswaddo,Mapusa,North Goa",
+    "latitude": 15.61441,
+    "longitude": 73.82236,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reil-14.91404-74.08342",
+    "name": "Loliem, Loliem, South Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "Loliem",
+    "address": "Loliem, Loliem, South Goa",
+    "latitude": 14.91404,
+    "longitude": 74.08342,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147,
+      148
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reil-15.377-74.22855",
+    "name": "Mollem, Mollem, South Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Mollem",
+    "address": "Mollem, Mollem, South Goa",
+    "latitude": 15.377,
+    "longitude": 74.22855,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reil-15.55412-74.01509",
+    "name": "Near Govt Multipurpose Hallgokulwadinorth Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Sanquelim",
+    "address": "Near Govt Multipurpose Hallgokulwadinorth Goa",
+    "latitude": 15.55412,
+    "longitude": 74.01509,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      147,
+      148
+    ],
+    "sourceRecordCount": 9
+  },
+  {
+    "id": "bee-reil-15.62708-73.87083",
+    "name": "Near Thivim Railway Station,Thivim,North Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Thivim",
+    "address": "Near Thivim Railway Station,Thivim,North Goa",
+    "latitude": 15.62708,
+    "longitude": 73.87083,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reil-15.37634-73.90478",
+    "name": "Opp Meta Strip,National Highway 17B,South Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "Sancoale",
+    "address": "Opp Meta Strip,National Highway 17B,South Goa",
+    "latitude": 15.37634,
+    "longitude": 73.90478,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reil-15.49277-73.83177",
+    "name": "Panjim, Panjim, North Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Panaji",
+    "address": "Panjim, Panjim, North Goa",
+    "latitude": 15.49277,
+    "longitude": 73.83177,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-reil-15.56657-73.78661",
+    "name": "Parra, Parra, North Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Parra",
+    "address": "Parra, Parra, North Goa",
+    "latitude": 15.56657,
+    "longitude": 73.78661,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-reil-15.44964-73.96946",
+    "name": "Priol, Priol, North Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Priol",
+    "address": "Priol, Priol, North Goa",
+    "latitude": 15.44964,
+    "longitude": 73.96946,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-reil-15.661539-73.838186",
+    "name": "Sairaj Petroleum,Indian Oil Dealers Survey No. 7/2D-1 Village-Dargalim",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Sairaj Petroleum,Indian Oil Dealers Survey No. 7/2D-1 Village-Dargalim",
+    "latitude": 15.661539,
+    "longitude": 73.838186,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-reil-15.277151-73.958442",
+    "name": "Salcete Margao, Chalta No, South Goa, Goa 403601",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "South Goa",
+    "address": "Salcete Margao, Chalta No, South Goa, Goa 403601",
+    "latitude": 15.277151,
+    "longitude": 73.958442,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 3
+  },
+  {
+    "id": "bee-reil-15.196733-73.996733",
+    "name": "Shantadurga Petroleum,Nh-17 Cuncolim Salecette Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "South Goa",
+    "cityOrVillage": "Salecette",
+    "address": "Shantadurga Petroleum,Nh-17 Cuncolim Salecette Goa",
+    "latitude": 15.196733,
+    "longitude": 73.996733,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-reil-15.382917-73.924067",
+    "name": "Sharayu Petroleum,\"Nh-17 Kesarval\" \"Cortalim Goa\"",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "North Goa",
+    "address": "Sharayu Petroleum,\"Nh-17 Kesarval\" \"Cortalim Goa\"",
+    "latitude": 15.382917,
+    "longitude": 73.924067,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-reil-15.68399-73.83227",
+    "name": "Survey No.280/1-A,Dhargalim,North Goa",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Dhragalim",
+    "address": "Survey No.280/1-A,Dhargalim,North Goa",
+    "latitude": 15.68399,
+    "longitude": 73.83227,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat DC-001",
+        "charger_rating": 15.0,
+        "connector_rating": 15.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-reil-15.546081-73.784885",
+    "name": "T & D Petro Service",
+    "operator": "REIL",
+    "ownership": "Govt.",
+    "district": "North Goa",
+    "cityOrVillage": "Saligao",
+    "address": "T & D Petro Service",
+    "latitude": 15.546081,
+    "longitude": 73.784885,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 6
+  },
+  {
+    "id": "bee-reliance-bp-15.3201-73.901691",
+    "name": "Utorda Beach Rd, Utorda, Majorda, Goa 403713",
+    "operator": "Reliance\nBP",
+    "ownership": "Private",
+    "district": "South Goa",
+    "cityOrVillage": "Goa",
+    "address": "Utorda Beach Rd, Utorda, Majorda, Goa 403713",
+    "latitude": 15.3201,
+    "longitude": 73.901691,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-sharify-15.1761-73.947098",
+    "name": "Cavelossim Beach, Cavelossim Salcete South Goa Goa Goa 403001",
+    "operator": "Sharify",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Cavelossim Beach, Cavelossim Salcete South Goa Goa Goa 403001",
+    "latitude": 15.1761,
+    "longitude": 73.947098,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 22.0,
+        "connector_rating": 22.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      148,
+      149
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-sharify-15.1589-73.947998",
+    "name": "Survey No. 52/5 & 8 Survey No. 52/5 & 8 Candolim Goa 403731",
+    "operator": "Sharify",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Candolim",
+    "address": "Survey No. 52/5 & 8 Survey No. 52/5 & 8 Candolim Goa 403731",
+    "latitude": 15.1589,
+    "longitude": 73.947998,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.7,
+        "connector_rating": 7.7,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.6014-73.79345",
+    "name": "70 Vale, Assagao, Bus Stop, 70 Vale, Near El Shaddai, Assagao, Goa 403507",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "70 Vale, Assagao, Bus Stop, 70 Vale, Near El Shaddai, Assagao, Goa 403507",
+    "latitude": 15.6014,
+    "longitude": 73.79345,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.662867-73.721868",
+    "name": "Amritara, Aura Spa Retreat, Goa, H. No. 227, Madhalamaj, Mandrem, North\nGoa 403512",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Amritara, Aura Spa Retreat, Goa, H. No. 227, Madhalamaj, Mandrem, North\nGoa 403512",
+    "latitude": 15.662867,
+    "longitude": 73.721868,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      },
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.530131-73.766327",
+    "name": "Bloom Rooms, Candolim, Candolim-Calangute Sinquerim Road, Opp.\nJambleshwar Temple, Gaura Waddo, Calangute, Goa, 403516",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Bloom Rooms, Candolim, Candolim-Calangute Sinquerim Road, Opp.\nJambleshwar Temple, Gaura Waddo, Calangute, Goa, 403516",
+    "latitude": 15.530131,
+    "longitude": 73.766327,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 1
+      },
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 8
+  },
+  {
+    "id": "bee-tata-power-15.540146-73.763952",
+    "name": "Bloom Suites, Calangute, Naikawaddo, Adjacent To Hdfc Bank, Calangute,\nGoa 403516",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Bloom Suites, Calangute, Naikawaddo, Adjacent To Hdfc Bank, Calangute,\nGoa 403516",
+    "latitude": 15.540146,
+    "longitude": 73.763952,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 1
+      },
+      {
+        "charger_connector": "Bharat AC-001",
+        "charger_rating": 10.0,
+        "connector_rating": 3.3,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 5
+  },
+  {
+    "id": "bee-tata-power-15.51613-73.7682",
+    "name": "Braganza House, Candolim, Braganza House, H.No-519 (50A/5), Vaddy,\nCandolim, Bardez Goa 403515",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Braganza House, Candolim, Braganza House, H.No-519 (50A/5), Vaddy,\nCandolim, Bardez Goa 403515",
+    "latitude": 15.51613,
+    "longitude": 73.7682,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.50835-73.77177",
+    "name": "Cardozo House, Candolim, House Number 312, 28/4 Bammon Vaddo,\nCandolim Bardez District, North Goa - 403515",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Cardozo House, Candolim, House Number 312, 28/4 Bammon Vaddo,\nCandolim Bardez District, North Goa - 403515",
+    "latitude": 15.50835,
+    "longitude": 73.77177,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.58139-73.774998",
+    "name": "Chikoo Villa, Bardez, Casa Brance, Plot No.97/9, Near Anjuna Post\nOffice/Tembi Football Ground, Anjuna, Bardez, Goa 403509",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Chikoo Villa, Bardez, Casa Brance, Plot No.97/9, Near Anjuna Post\nOffice/Tembi Football Ground, Anjuna, Bardez, Goa 403509",
+    "latitude": 15.58139,
+    "longitude": 73.774998,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.456909-73.813542",
+    "name": "Cidade De Goa, Vainguinim Beach, Vainguinim Beach, Panaji, Goa 403004",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Cidade De Goa, Vainguinim Beach, Vainguinim Beach, Panaji, Goa 403004",
+    "latitude": 15.456909,
+    "longitude": 73.813542,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.500525-73.770466",
+    "name": "Dando Candolim Bardez, Goa, 403515",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Dando Candolim Bardez, Goa, 403515",
+    "latitude": 15.500525,
+    "longitude": 73.770466,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.530914-73.824861",
+    "name": "\u0018ƵƌŐĂ\u0003DŽƚŽƌƐ͕\u0003WŽƌǀŽƌŝŵ͕\u0003WůŽƚ\u0003EŽ\u0003ϲϳͬϭϬ͕\u0003,͘\u0003EŽ͘\u0003ϰϭϲͬϭϯ͕\u0003EĞĂƌ\u0003K͟\u0003\u0012ŽƋƵĞŝƌŽ\n\u0012ŝƌĐůĞ͕\u0003'ŽǀĞŬĂƌ\u0003EĂŐĂƌ͕\u0003WŽƌǀŽƌŝŵ͕\u0003WŝůĞƌŶĞ͕\u0003'ŽĂ\u0003ϰϬϯϱϮϭ",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "\u0018ƵƌŐĂ\u0003DŽƚŽƌƐ͕\u0003WŽƌǀŽƌŝŵ͕\u0003WůŽƚ\u0003EŽ\u0003ϲϳͬϭϬ͕\u0003,͘\u0003EŽ͘\u0003ϰϭϲͬϭϯ͕\u0003EĞĂƌ\u0003K͟\u0003\u0012ŽƋƵĞŝƌŽ\n\u0012ŝƌĐůĞ͕\u0003'ŽǀĞŬĂƌ\u0003EĂŐĂƌ͕\u0003WŽƌǀŽƌŝŵ͕\u0003WŝůĞƌŶĞ͕\u0003'ŽĂ\u0003ϰϬϯϱϮϭ",
+    "latitude": 15.530914,
+    "longitude": 73.824861,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.14019-73.95149",
+    "name": "Kharvi Abode Betul,Quepem, House Nos. 7 & 8 Postawado Near Betul Fort,\nBetul, Quepem, Goa 403705",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Kharvi Abode Betul,Quepem, House Nos. 7 & 8 Postawado Near Betul Fort,\nBetul, Quepem, Goa 403705",
+    "latitude": 15.14019,
+    "longitude": 73.95149,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.496315-73.831379",
+    "name": "La Quinta, Mala, H.No.5/158, Near St.Sebastian Chapel, Fontainhas , Mala,\nPanaji 403001",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "La Quinta, Mala, H.No.5/158, Near St.Sebastian Chapel, Fontainhas , Mala,\nPanaji 403001",
+    "latitude": 15.496315,
+    "longitude": 73.831379,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.46817-73.819022",
+    "name": "Magsons Fresh, Taleigao, Magsons Fresh, Rawalnath Estate, Taleigao 403002",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Magsons Fresh, Taleigao, Magsons Fresh, Rawalnath Estate, Taleigao 403002",
+    "latitude": 15.46817,
+    "longitude": 73.819022,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.46069-73.824127",
+    "name": "Magsons Towers, Panaji, Magsons Towers, Opp Sports Complex, D B Marg,\nMiramar, Panaji Goa 403001",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Magsons Towers, Panaji, Magsons Towers, Opp Sports Complex, D B Marg,\nMiramar, Panaji Goa 403001",
+    "latitude": 15.46069,
+    "longitude": 73.824127,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.469336-73.820463",
+    "name": "Priority Auto Lincs, Taleiga, Survey No.166/1, New Taleigao Bypass Road,\nOpp.Taleigao Community Centre. Taleiga- Goa-403002",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Priority Auto Lincs, Taleiga, Survey No.166/1, New Taleigao Bypass Road,\nOpp.Taleigao Community Centre. Taleiga- Goa-403002",
+    "latitude": 15.469336,
+    "longitude": 73.820463,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 50.0,
+        "connector_rating": 50.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      149,
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.587153-73.743893",
+    "name": "Rosetum Goa, Anjuna North Goa , Sohana Palace, Survey No. 176/09,\nRosetum, Soranto Or Gothniche Bhat, Anjuna, North Goa- 403509",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Rosetum Goa, Anjuna North Goa , Sohana Palace, Survey No. 176/09,\nRosetum, Soranto Or Gothniche Bhat, Anjuna, North Goa- 403509",
+    "latitude": 15.587153,
+    "longitude": 73.743893,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      },
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.24514-73.92528",
+    "name": "Taj Exotica Resort & Spa, Benaulim, Calwaddo, Benaulim, Goa 403716",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Taj Exotica Resort & Spa, Benaulim, Calwaddo, Benaulim, Goa 403716",
+    "latitude": 15.24514,
+    "longitude": 73.92528,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.497365-73.768258",
+    "name": "Taj Fort Aguada Resorts And Spa Goa, Sinquerim Candolim Bardez, Goa,\n403515",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Taj Fort Aguada Resorts And Spa Goa, Sinquerim Candolim Bardez, Goa,\n403515",
+    "latitude": 15.497365,
+    "longitude": 73.768258,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.497326-73.76824",
+    "name": "Taj Fort Aguada Resorts And Spa Goa, Taj Fort Aguada Resorts And Spa Goa,\nSinquerim Candolim Bardez, Goa, 403515",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Taj Fort Aguada Resorts And Spa Goa, Taj Fort Aguada Resorts And Spa Goa,\nSinquerim Candolim Bardez, Goa, 403515",
+    "latitude": 15.497326,
+    "longitude": 73.76824,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.500591-73.770099",
+    "name": "Taj Holiday Village Resort & Spa, Dando Candolim Bardez, Goa, 403515",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Taj Holiday Village Resort & Spa, Dando Candolim Bardez, Goa, 403515",
+    "latitude": 15.500591,
+    "longitude": 73.770099,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.458193-73.812206",
+    "name": "Taj Resort & Convention Centre, Vainguinim Beach, Vainguinim Beach, Dona\nPaula, Panaji, Goa 403004",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Taj Resort & Convention Centre, Vainguinim Beach, Vainguinim Beach, Dona\nPaula, Panaji, Goa 403004",
+    "latitude": 15.458193,
+    "longitude": 73.812206,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.50636-73.82488",
+    "name": "Terry'S Super Market, Porvorim, H.No. B 50 Bardez, Alto- Betim Porvorim,\nGoa 403521",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Terry'S Super Market, Porvorim, H.No. B 50 Bardez, Alto- Betim Porvorim,\nGoa 403521",
+    "latitude": 15.50636,
+    "longitude": 73.82488,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Combo (CCS-II+CHAdeMO)",
+        "charger_rating": 25.0,
+        "connector_rating": 25.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.533721-73.759568",
+    "name": "The Park, Calangute, The Park, 1 221, Gaura Vaddo, Calangute, North Goa,\nGoa, 403516",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "The Park, Calangute, The Park, 1 221, Gaura Vaddo, Calangute, North Goa,\nGoa, 403516",
+    "latitude": 15.533721,
+    "longitude": 73.759568,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      },
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.457259-73.811958",
+    "name": "Vainguinim Beach, Vainguinim Beach, Dona Paula, Panaji, Goa 403004",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Vainguinim Beach, Vainguinim Beach, Dona Paula, Panaji, Goa 403004",
+    "latitude": 15.457259,
+    "longitude": 73.811958,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.456495-73.813378",
+    "name": "Vainguinim Beach, Vainguinim Beach, Panaji, Goa 403004",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Vainguinim Beach, Vainguinim Beach, Panaji, Goa 403004",
+    "latitude": 15.456495,
+    "longitude": 73.813378,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.52445-73.78686",
+    "name": "Villa No.1 Saipam Goa, Pilerne Industrial Estates, Villa No 1 Saipem Hills\nPilerne- Candolim Road, Pilerne Industrial Estates, Goa 403114",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Villa No.1 Saipam Goa, Pilerne Industrial Estates, Villa No 1 Saipem Hills\nPilerne- Candolim Road, Pilerne Industrial Estates, Goa 403114",
+    "latitude": 15.52445,
+    "longitude": 73.78686,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.62526-73.73658",
+    "name": "Villa Siolim Goa, Siolim Bardez, Villa Siolim, Porta Vaddo, Off The\nSiolim-Chopdam, Bridge Road Siolim Bardez, Goa-403507",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Villa Siolim Goa, Siolim Bardez, Villa Siolim, Porta Vaddo, Off The\nSiolim-Chopdam, Bridge Road Siolim Bardez, Goa-403507",
+    "latitude": 15.62526,
+    "longitude": 73.73658,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-tata-power-15.538915-73.768432",
+    "name": "Zone Connect, Calangute, 2/16A, Calangute Candolim Road, Calangute,\nNorth Goa - 403516",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Zone Connect, Calangute, 2/16A, Calangute Candolim Road, Calangute,\nNorth Goa - 403516",
+    "latitude": 15.538915,
+    "longitude": 73.768432,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      },
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-tata-power-15.565512-73.785032",
+    "name": "Zone Connect, Parra, Insignia Retreats & Spa, 171/16-A, Parra , North Goa,\nGoa - 403510",
+    "operator": "Tata Power",
+    "ownership": "Private",
+    "district": "North Goa",
+    "cityOrVillage": "Goa",
+    "address": "Zone Connect, Parra, Insignia Retreats & Spa, 171/16-A, Parra , North Goa,\nGoa - 403510",
+    "latitude": 15.565512,
+    "longitude": 73.785032,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS-II",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      },
+      {
+        "charger_connector": "Type-II AC",
+        "charger_rating": 7.4,
+        "connector_rating": 7.4,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-bpcl-15.26993-74.112101",
+    "name": "#, #, , City=SANVORDEM, District=SOUTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "SOUTH GOA",
+    "cityOrVillage": "SANVORDEM",
+    "address": "#, #, , City=SANVORDEM, District=SOUTH GOA, State=Goa",
+    "latitude": 15.26993,
+    "longitude": 74.112101,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.282935-73.980213",
+    "name": "HOUSING COLONY ROAD, VIDYA NAGAR,, , City=MARGAO, District=SOUTH\nGOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "SOUTH GOA",
+    "cityOrVillage": "MARGAO",
+    "address": "HOUSING COLONY ROAD, VIDYA NAGAR,, , City=MARGAO, District=SOUTH\nGOA, State=Goa",
+    "latitude": 15.282935,
+    "longitude": 73.980213,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC",
+        "charger_rating": 15.0,
+        "connector_rating": 7.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      150
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-bpcl-15.377-74.228548",
+    "name": "NEAR CHECK POST, MOLLEM, , City=MOLLEM, District=SOUTH GOA,\nState=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "SOUTH GOA",
+    "cityOrVillage": "MOLLEM",
+    "address": "NEAR CHECK POST, MOLLEM, , City=MOLLEM, District=SOUTH GOA,\nState=Goa",
+    "latitude": 15.377,
+    "longitude": 74.228548,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.495315-73.821062",
+    "name": "NEAR DON BOSCO SCHOOL, NEAR DON BOSCO SCHOOL, , City=PANJIM,\nDistrict=NORTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "PANJIM",
+    "address": "NEAR DON BOSCO SCHOOL, NEAR DON BOSCO SCHOOL, , City=PANJIM,\nDistrict=NORTH GOA, State=Goa",
+    "latitude": 15.495315,
+    "longitude": 73.821062,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "LEV DC",
+        "charger_rating": 15.0,
+        "connector_rating": 7.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 2
+  },
+  {
+    "id": "bee-bpcl-15.554122-74.015089",
+    "name": "NEAR GOVT MULTIPURPOSE HALL,, GOKULWADI,, , City=SANQUELIM,\nDistrict=NORTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "SANQUELIM",
+    "address": "NEAR GOVT MULTIPURPOSE HALL,, GOKULWADI,, , City=SANQUELIM,\nDistrict=NORTH GOA, State=Goa",
+    "latitude": 15.554122,
+    "longitude": 74.015089,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.370548-74.009558",
+    "name": "NEAR NEW BORIM BRIDGE, BORIM, , City=BORIM, District=NORTH GOA,\nState=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "BORIM",
+    "address": "NEAR NEW BORIM BRIDGE, BORIM, , City=BORIM, District=NORTH GOA,\nState=Goa",
+    "latitude": 15.370548,
+    "longitude": 74.009558,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.627084-73.870827",
+    "name": "NEAR THIVIM RAILWAY STATION, THIVIM, , City=THIVIM, TALUKA - BARDEZ,\nDistrict=NORTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "THIVIM, TALUKA -\nBARDEZ",
+    "address": "NEAR THIVIM RAILWAY STATION, THIVIM, , City=THIVIM, TALUKA - BARDEZ,\nDistrict=NORTH GOA, State=Goa",
+    "latitude": 15.627084,
+    "longitude": 73.870827,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.378489-73.926182",
+    "name": "NEXT TO HOTEL KESARWAL, NH-17, , City=VASCO-DA-GAMA, District=SOUTH\nGOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "SOUTH GOA",
+    "cityOrVillage": "VASCO-DA-GAMA",
+    "address": "NEXT TO HOTEL KESARWAL, NH-17, , City=VASCO-DA-GAMA, District=SOUTH\nGOA, State=Goa",
+    "latitude": 15.378489,
+    "longitude": 73.926182,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 30.0,
+        "connector_rating": 30.0,
+        "number_of_connectors": 1
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-14.914043-74.083424",
+    "name": "NH17, VILLAGE LOLIEM,POLEM, NEAR MILAN BAR AND RESTAURANT, ,\nCity=LOLIEM, District=SOUTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "SOUTH GOA",
+    "cityOrVillage": "LOLIEM",
+    "address": "NH17, VILLAGE LOLIEM,POLEM, NEAR MILAN BAR AND RESTAURANT, ,\nCity=LOLIEM, District=SOUTH GOA, State=Goa",
+    "latitude": 14.914043,
+    "longitude": 74.083424,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.773197-73.846382",
+    "name": "ON NH 66, TORXEM, , City=TORXEM, District=NORTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "TORXEM",
+    "address": "ON NH 66, TORXEM, , City=TORXEM, District=NORTH GOA, State=Goa",
+    "latitude": 15.773197,
+    "longitude": 73.846382,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.548484-74.043918",
+    "name": "ONDA, SATTARI, , City=HONDA, District=NORTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "HONDA",
+    "address": "ONDA, SATTARI, , City=HONDA, District=NORTH GOA, State=Goa",
+    "latitude": 15.548484,
+    "longitude": 74.043918,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.376342-73.904781",
+    "name": "OPP META STRIP, NATIONAL HIGHWAY 17B, , City=SANCOALE,\nDistrict=SOUTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "SOUTH GOA",
+    "cityOrVillage": "SANCOALE",
+    "address": "OPP META STRIP, NATIONAL HIGHWAY 17B, , City=SANCOALE,\nDistrict=SOUTH GOA, State=Goa",
+    "latitude": 15.376342,
+    "longitude": 73.904781,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.370547-74.009533",
+    "name": "OPP. TOP COLA FACTORY, PANJIM BELAUM ROAD, , City=BORIM,\nDistrict=NORTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "BORIM",
+    "address": "OPP. TOP COLA FACTORY, PANJIM BELAUM ROAD, , City=BORIM,\nDistrict=NORTH GOA, State=Goa",
+    "latitude": 15.370547,
+    "longitude": 74.009533,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.529403-73.992351",
+    "name": "PLOT NO 46/3, OPP SESA GOA LTD (AMONA BRANCH), , City=BICHOLIM,\nDistrict=NORTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "BICHOLIM",
+    "address": "PLOT NO 46/3, OPP SESA GOA LTD (AMONA BRANCH), , City=BICHOLIM,\nDistrict=NORTH GOA, State=Goa",
+    "latitude": 15.529403,
+    "longitude": 73.992351,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.449643-73.969458",
+    "name": "SURVEY NO 48/1, ON NH- 4A, MANGESHI, , City=PRIOL, District=NORTH\nGOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "PRIOL",
+    "address": "SURVEY NO 48/1, ON NH- 4A, MANGESHI, , City=PRIOL, District=NORTH\nGOA, State=Goa",
+    "latitude": 15.449643,
+    "longitude": 73.969458,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.403062-74.095613",
+    "name": "TISKA, #, , City=TISKA, District=SOUTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "SOUTH GOA",
+    "cityOrVillage": "TISKA",
+    "address": "TISKA, #, , City=TISKA, District=SOUTH GOA, State=Goa",
+    "latitude": 15.403062,
+    "longitude": 74.095613,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.445539-74.047761",
+    "name": "USGAO, TAL - PONDA, , City=USGAO, District=SOUTH GOA, State=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "SOUTH GOA",
+    "cityOrVillage": "USGAO",
+    "address": "USGAO, TAL - PONDA, , City=USGAO, District=SOUTH GOA, State=Goa",
+    "latitude": 15.445539,
+    "longitude": 74.047761,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  },
+  {
+    "id": "bee-bpcl-15.525934-74.123197",
+    "name": "VALPOI, VALPOI PANAJI ROAD, , City=VALPOI, District=NORTH GOA,\nState=Goa",
+    "operator": "BPCL",
+    "ownership": "Govt.",
+    "district": "NORTH GOA",
+    "cityOrVillage": "VALPOI",
+    "address": "VALPOI, VALPOI PANAJI ROAD, , City=VALPOI, District=NORTH GOA,\nState=Goa",
+    "latitude": 15.525934,
+    "longitude": 74.123197,
+    "connectorConfigurations": [
+      {
+        "charger_connector": "CCS",
+        "charger_rating": 60.0,
+        "connector_rating": 60.0,
+        "number_of_connectors": 2
+      }
+    ],
+    "source": "BEE EV Public Charging Stations Data",
+    "sourcePages": [
+      151
+    ],
+    "sourceRecordCount": 1
+  }
+]

@@ -39,7 +39,9 @@ export function TopBar({
         (st) =>
           st.name.toLowerCase().includes(trimmedQuery) ||
           (st.town && st.town.toLowerCase().includes(trimmedQuery)) ||
-          (st.addressLine1 && st.addressLine1.toLowerCase().includes(trimmedQuery))
+          (st.addressLine1 && st.addressLine1.toLowerCase().includes(trimmedQuery)) ||
+          (st.operatorName && st.operatorName.toLowerCase().includes(trimmedQuery)) ||
+          (st.district && st.district.toLowerCase().includes(trimmedQuery))
       )
     : [];
 
@@ -182,9 +184,9 @@ export function TopBar({
 
       {/* Right Controls */}
       <div className="top-bar-right">
-        <div className="live-network-indicator" title="Connected to Open Charge Map API">
+        <div className="live-network-indicator" title="Connected to Open Charge Map API & BEE Registry">
           <span className="live-dot"></span>
-          <span className="live-text">Live API</span>
+          <span className="live-text">Live Network</span>
         </div>
       </div>
     </div>

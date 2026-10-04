@@ -2,28 +2,38 @@ import { useEffect, useRef } from "react";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { GoaChargeStation } from "../types/station";
+import type { RouteData } from "../services/routeService";
 
 interface GoaMapProps {
   stations: GoaChargeStation[];
   selectedStationId: number | null;
   onSelectStation: (station: GoaChargeStation) => void;
   flyToCoords?: [number, number] | null;
+  activeRoute?: RouteData | null;
+  isNavigating?: boolean;
+  onFitRoute?: () => void;
 }
 
-const GOA_CENTER: [number, number] = [74.124, 15.35];
-const GOA_DEFAULT_ZOOM = 9.5;
+const GOA_CENTER: [number, number] = [74.05, 15.35];
+const GOA_DEFAULT_ZOOM = 9.8;
 
 export default function GoaMap({
   stations,
   selectedStationId,
   onSelectStation,
   flyToCoords,
+  activeRoute,
+  isNavigating = false,
 }: GoaMapProps) {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const map = useRef<maplibregl.Map | null>(null);
   const markersRef = useRef<Map<number, { marker: maplibregl.Marker; el: HTMLDivElement }>>(
     new Map()
   );
+  const userMarkerRef = useRef<maplibregl.Marker | null>(null);
+  const perimeterAnimRef = useRef<number | null>(null);
+  const stateLabelMarkerRef = useRef<maplibregl.Marker | null>(null);
+  const pulseGoaBoundaryRef = useRef<(() => void) | null>(null);
 
   // Initialize MapLibre
   useEffect(() => {
@@ -42,7 +52,7 @@ export default function GoaMap({
 
     map.current.addControl(new maplibregl.NavigationControl(), "bottom-right");
 
-    map.current.on("load", () => {
+    map.current.on("load", async () => {
       if (!map.current) return;
 
       // Dark theme style adjustments
@@ -83,32 +93,353 @@ export default function GoaMap({
         });
       }
 
-      // Goa boundary GeoJSON source and glow layers
-      map.current.addSource("goa-boundary", {
-        type: "geojson",
-        data: "/data/goa-boundary.geojson",
-      });
+      // ── 1. Load Goa GeoJSON & Setup Visual Mask / Boundaries ────────
+      try {
+        const res = await fetch("/data/goa-boundary.geojson");
+        const boundaryGeoJSON = await res.json();
+        if (!map.current) return;
 
-      map.current.addLayer({
-        id: "goa-boundary-glow",
-        type: "line",
-        source: "goa-boundary",
-        paint: {
-          "line-color": "#5EEAD4",
-          "line-width": ["interpolate", ["linear"], ["zoom"], 8, 4, 12, 10],
-          "line-opacity": 0.3,
-          "line-blur": ["interpolate", ["linear"], ["zoom"], 8, 2, 12, 6],
+        // Extract polygon rings for the outside-Goa dimming mask
+        const worldBox = [
+          [-180, 85],
+          [180, 85],
+          [180, -85],
+          [-180, -85],
+          [-180, 85],
+        ];
+
+        let holes: number[][][] = [];
+        const geom = boundaryGeoJSON.features[0].geometry;
+        if (geom.type === "MultiPolygon") {
+          holes = geom.coordinates.map((poly: number[][][]) => poly[0]);
+        } else if (geom.type === "Polygon") {
+          holes = [geom.coordinates[0]];
+        }
+
+        const maskGeoJSON = {
+          type: "FeatureCollection",
+          features: [
+            {
+              type: "Feature",
+              properties: {},
+              geometry: {
+                type: "Polygon",
+                coordinates: [worldBox, ...holes],
+              },
+            },
+          ],
+        };
+
+        // Source: Outside Goa mask (world polygon with Goa as cutout holes)
+        map.current.addSource("goa-mask", {
+          type: "geojson",
+          data: maskGeoJSON as any,
+        });
+
+        // Layer: Outside Goa dimming overlay (quiet, less saturated, yet roads & geography remain visible)
+        map.current.addLayer({
+          id: "goa-mask-layer",
+          type: "fill",
+          source: "goa-mask",
+          paint: {
+            "fill-color": "#03080d",
+            "fill-opacity": 0.52,
+          },
+        });
+
+        // Source: Official Goa boundary
+        map.current.addSource("goa-boundary", {
+          type: "geojson",
+          data: boundaryGeoJSON,
+        });
+
+        // Layer: Subtle translucent teal fill INSIDE Goa
+        map.current.addLayer({
+          id: "goa-fill",
+          type: "fill",
+          source: "goa-boundary",
+          paint: {
+            "fill-color": "#0d9488",
+            "fill-opacity": 0.08,
+          },
+        });
+
+        // Layer: Soft, elegant ambient glow around the Goa boundary
+        map.current.addLayer({
+          id: "goa-boundary-glow",
+          type: "line",
+          source: "goa-boundary",
+          paint: {
+            "line-color": "#14b8a6",
+            "line-width": ["interpolate", ["linear"], ["zoom"], 8, 4, 12, 10],
+            "line-opacity": 0.35,
+            "line-blur": ["interpolate", ["linear"], ["zoom"], 8, 2, 12, 6],
+          },
+        });
+
+        // Layer: Crisp, refined teal outline around Goa
+        map.current.addLayer({
+          id: "goa-boundary-core",
+          type: "line",
+          source: "goa-boundary",
+          paint: {
+            "line-color": "#5EEAD4",
+            "line-width": ["interpolate", ["linear"], ["zoom"], 8, 1.2, 12, 2.5],
+            "line-opacity": 0.85,
+          },
+        });
+
+        // ── 2. Animated Energy Pulse Travelling Around Perimeter ────────
+        let perimeterCoords: [number, number][] = [];
+        if (geom.type === "MultiPolygon") {
+          perimeterCoords = geom.coordinates[0][0];
+        } else if (geom.type === "Polygon") {
+          perimeterCoords = geom.coordinates[0];
+        }
+
+        // Sample every 12th point for smooth ~640 point circuit (~30 FPS)
+        const sampledPerimeter = perimeterCoords.filter((_, idx) => idx % 12 === 0);
+
+        if (sampledPerimeter.length > 0) {
+          map.current.addSource("goa-perimeter-pulse", {
+            type: "geojson",
+            data: {
+              type: "FeatureCollection",
+              features: [
+                {
+                  type: "Feature",
+                  properties: {},
+                  geometry: {
+                    type: "Point",
+                    coordinates: sampledPerimeter[0],
+                  },
+                },
+              ],
+            },
+          });
+
+          // Soft traveling halo
+          map.current.addLayer({
+            id: "goa-perimeter-pulse-halo",
+            type: "circle",
+            source: "goa-perimeter-pulse",
+            paint: {
+              "circle-color": "#5EEAD4",
+              "circle-radius": 8,
+              "circle-blur": 0.75,
+              "circle-opacity": 0.5,
+            },
+          });
+
+          // Crisp radiant core
+          map.current.addLayer({
+            id: "goa-perimeter-pulse-core",
+            type: "circle",
+            source: "goa-perimeter-pulse",
+            paint: {
+              "circle-color": "#ffffff",
+              "circle-radius": 2.2,
+              "circle-opacity": 0.95,
+            },
+          });
+
+          let pulseIdx = 0;
+          let lastPulseTick = performance.now();
+
+          const stepPerimeterPulse = (now: number) => {
+            if (!map.current) return;
+            if (now - lastPulseTick >= 32) {
+              lastPulseTick = now;
+              pulseIdx = (pulseIdx + 1) % sampledPerimeter.length;
+              const pt = sampledPerimeter[pulseIdx];
+              const src = map.current.getSource("goa-perimeter-pulse") as
+                | maplibregl.GeoJSONSource
+                | undefined;
+              if (src) {
+                src.setData({
+                  type: "FeatureCollection",
+                  features: [
+                    {
+                      type: "Feature",
+                      properties: {},
+                      geometry: {
+                        type: "Point",
+                        coordinates: pt,
+                      },
+                    },
+                  ],
+                });
+              }
+            }
+            perimeterAnimRef.current = requestAnimationFrame(stepPerimeterPulse);
+          };
+
+          perimeterAnimRef.current = requestAnimationFrame(stepPerimeterPulse);
+        }
+
+        // ── 3. Central Goa Branding Label ────────────────────────────
+        const labelEl = document.createElement("div");
+        labelEl.className = "goa-central-label";
+        labelEl.innerHTML = `
+          <div class="goa-central-label-title">GOA</div>
+          <div class="goa-central-label-subtitle">EV CHARGING NETWORK</div>
+        `;
+
+        stateLabelMarkerRef.current = new maplibregl.Marker({
+          element: labelEl,
+          anchor: "center",
+        })
+          .setLngLat([74.05, 15.35])
+          .addTo(map.current);
+
+        const updateLabelOpacity = () => {
+          if (!map.current) return;
+          const zoom = map.current.getZoom();
+          if (zoom > 12) {
+            labelEl.style.opacity = "0";
+          } else if (zoom <= 10.5) {
+            labelEl.style.opacity = "0.85";
+          } else {
+            const factor = (12 - zoom) / 1.5;
+            labelEl.style.opacity = (factor * 0.85).toFixed(2);
+          }
+        };
+
+        map.current.on("zoom", updateLabelOpacity);
+        updateLabelOpacity();
+
+        // ── 4. Interactive Boundary Hover & Click (queryRenderedFeatures) ──
+        let isHovering = false;
+
+        const pulseGoaBoundary = () => {
+          if (!map.current || !map.current.getLayer("goa-boundary-glow")) return;
+          const start = performance.now();
+          const duration = 850;
+
+          const pulseStep = (now: number) => {
+            if (!map.current || !map.current.getLayer("goa-boundary-glow")) return;
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            const wave = Math.sin(progress * Math.PI);
+
+            map.current.setPaintProperty("goa-boundary-glow", "line-width", 5 + wave * 11);
+            map.current.setPaintProperty("goa-boundary-glow", "line-opacity", 0.35 + wave * 0.45);
+            map.current.setPaintProperty("goa-fill", "fill-opacity", 0.08 + wave * 0.07);
+
+            if (progress < 1) {
+              requestAnimationFrame(pulseStep);
+            } else {
+              map.current.setPaintProperty("goa-boundary-glow", "line-width", [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                8,
+                4,
+                12,
+                10,
+              ]);
+              map.current.setPaintProperty("goa-boundary-glow", "line-opacity", 0.35);
+              map.current.setPaintProperty("goa-fill", "fill-opacity", 0.08);
+            }
+          };
+
+          requestAnimationFrame(pulseStep);
+        };
+
+        pulseGoaBoundaryRef.current = pulseGoaBoundary;
+
+        map.current.on("mousemove", (e) => {
+          if (!map.current || !map.current.getLayer("goa-fill")) return;
+          const features = map.current.queryRenderedFeatures(e.point, {
+            layers: ["goa-fill"],
+          });
+          const hovering = features.length > 0;
+          if (hovering !== isHovering) {
+            isHovering = hovering;
+            map.current.getCanvas().style.cursor = hovering ? "pointer" : "";
+
+            if (hovering) {
+              map.current.setPaintProperty("goa-boundary-glow", "line-opacity", 0.65);
+              map.current.setPaintProperty("goa-boundary-glow", "line-width", 8);
+              map.current.setPaintProperty("goa-boundary-core", "line-opacity", 1.0);
+              map.current.setPaintProperty("goa-fill", "fill-opacity", 0.13);
+            } else {
+              map.current.setPaintProperty("goa-boundary-glow", "line-opacity", 0.35);
+              map.current.setPaintProperty("goa-boundary-glow", "line-width", [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                8,
+                4,
+                12,
+                10,
+              ]);
+              map.current.setPaintProperty("goa-boundary-core", "line-opacity", 0.85);
+              map.current.setPaintProperty("goa-fill", "fill-opacity", 0.08);
+            }
+          }
+        });
+
+        map.current.on("click", (e) => {
+          if (!map.current || !map.current.getLayer("goa-fill")) return;
+          const features = map.current.queryRenderedFeatures(e.point, {
+            layers: ["goa-fill"],
+          });
+          if (features.length > 0) {
+            map.current.flyTo({
+              center: GOA_CENTER,
+              zoom: GOA_DEFAULT_ZOOM,
+              pitch: 0,
+              bearing: 0,
+              essential: true,
+              duration: 1000,
+            });
+            pulseGoaBoundary();
+          }
+        });
+      } catch (err) {
+        console.error("Failed to load Goa boundary GeoJSON:", err);
+      }
+
+      // ── Dedicated Route Source and Layers ────────────────────────────
+      map.current.addSource("goacharge-route", {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: [],
         },
       });
 
+      // Outer glow / casing for driving route
       map.current.addLayer({
-        id: "goa-boundary-core",
+        id: "goacharge-route-casing",
         type: "line",
-        source: "goa-boundary",
+        source: "goacharge-route",
+        layout: {
+          "line-join": "round",
+          "line-cap": "round",
+        },
+        paint: {
+          "line-color": "#0f766e",
+          "line-width": 9,
+          "line-opacity": 0.6,
+          "line-blur": 3,
+        },
+      });
+
+      // Vibrant electric route line
+      map.current.addLayer({
+        id: "goacharge-route-core",
+        type: "line",
+        source: "goacharge-route",
+        layout: {
+          "line-join": "round",
+          "line-cap": "round",
+        },
         paint: {
           "line-color": "#5EEAD4",
-          "line-width": ["interpolate", ["linear"], ["zoom"], 8, 1, 12, 3],
-          "line-opacity": 0.8,
+          "line-width": 4.5,
+          "line-opacity": 0.95,
         },
       });
 
@@ -212,7 +543,6 @@ export default function GoaMap({
           gl.enableVertexAttribArray(aUv);
           gl.vertexAttribPointer(aUv, 2, gl.FLOAT, false, 16, 8);
 
-          // WebGL2 uniformMatrix4fv compatibility check
           const mat =
             matrix instanceof Float32Array
               ? matrix
@@ -230,6 +560,14 @@ export default function GoaMap({
     });
 
     return () => {
+      if (perimeterAnimRef.current != null) {
+        cancelAnimationFrame(perimeterAnimRef.current);
+        perimeterAnimRef.current = null;
+      }
+      if (stateLabelMarkerRef.current) {
+        stateLabelMarkerRef.current.remove();
+        stateLabelMarkerRef.current = null;
+      }
       map.current?.remove();
       map.current = null;
     };
@@ -239,14 +577,13 @@ export default function GoaMap({
   useEffect(() => {
     if (!map.current) return;
 
-    // Clear existing markers
+    // Clear existing station markers
     markersRef.current.forEach(({ marker }) => marker.remove());
     markersRef.current.clear();
 
     stations.forEach((station) => {
       const isSelected = station.ocmId === selectedStationId;
 
-      // Create custom marker DOM element
       const el = document.createElement("div");
       el.className = `ev-map-marker ${isSelected ? "selected" : ""}`;
       el.setAttribute("role", "button");
@@ -292,9 +629,9 @@ export default function GoaMap({
     });
   }, [selectedStationId]);
 
-  // FlyTo coordinates when flyToCoords or selection changes
+  // FlyTo coordinates when flyToCoords changes (and no route is actively being fitted)
   useEffect(() => {
-    if (!map.current || !flyToCoords) return;
+    if (!map.current || !flyToCoords || activeRoute) return;
 
     map.current.flyTo({
       center: flyToCoords,
@@ -303,7 +640,82 @@ export default function GoaMap({
       essential: true,
       duration: 1000,
     });
-  }, [flyToCoords]);
+  }, [flyToCoords, activeRoute]);
+
+  // ── Synchronize Active Route with MapLibre Source and User Marker ───
+  useEffect(() => {
+    if (!map.current) return;
+
+    const source = map.current.getSource("goacharge-route") as
+      | maplibregl.GeoJSONSource
+      | undefined;
+
+    if (activeRoute) {
+      // 1. Draw route GeoJSON geometry
+      if (source) {
+        source.setData(activeRoute.geometry);
+      }
+
+      // 2. Add or update user location origin marker
+      if (!userMarkerRef.current) {
+        const el = document.createElement("div");
+        el.className = "user-location-marker";
+        el.innerHTML = `
+          <div class="user-pulse-ring"></div>
+          <div class="user-dot">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+              <circle cx="12" cy="12" r="8"></circle>
+            </svg>
+          </div>
+        `;
+        userMarkerRef.current = new maplibregl.Marker({ element: el })
+          .setLngLat(activeRoute.origin)
+          .addTo(map.current);
+      } else {
+        userMarkerRef.current.setLngLat(activeRoute.origin);
+      }
+
+      // 3. Automatically fit route in viewport
+      const coords = activeRoute.geometry.coordinates;
+      if (coords.length > 0) {
+        const bounds = coords.reduce(
+          (acc, coord) => acc.extend(coord as [number, number]),
+          new maplibregl.LngLatBounds(coords[0], coords[0])
+        );
+
+        map.current.fitBounds(bounds, {
+          padding: { top: 100, bottom: 120, left: 360, right: 100 },
+          duration: 1200,
+          essential: true,
+          maxZoom: 15,
+        });
+      }
+    } else {
+      // Clear route line
+      if (source) {
+        source.setData({
+          type: "FeatureCollection",
+          features: [],
+        });
+      }
+
+      // Remove user origin marker
+      if (userMarkerRef.current) {
+        userMarkerRef.current.remove();
+        userMarkerRef.current = null;
+      }
+    }
+  }, [activeRoute]);
+
+  // Adjust pitch when navigation preview mode toggles
+  useEffect(() => {
+    if (!map.current || !activeRoute) return;
+    if (isNavigating) {
+      map.current.easeTo({ pitch: 45, duration: 900 });
+    } else {
+      map.current.easeTo({ pitch: 0, duration: 700 });
+    }
+  }, [isNavigating, activeRoute]);
 
   // Reset to full Goa view
   const handleResetGoa = () => {
@@ -316,6 +728,7 @@ export default function GoaMap({
       essential: true,
       duration: 900,
     });
+    pulseGoaBoundaryRef.current?.();
   };
 
   return (

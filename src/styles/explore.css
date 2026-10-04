@@ -1102,3 +1102,41 @@
   from { transform: translateY(100%); }
   to { transform: translateY(0); }
 }
+
+/* ── Central Goa Branding Map Label ───────────────────────────────── */
+.goa-central-label {
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.35s ease;
+  z-index: 1;
+}
+
+.goa-central-label-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.38em;
+  color: #f1f5f9;
+  text-transform: uppercase;
+  text-shadow: 0 2px 14px rgba(2, 6, 11, 0.95), 0 0 24px rgba(20, 184, 166, 0.45);
+  padding-left: 0.38em;
+  line-height: 1.2;
+}
+
+.goa-central-label-subtitle {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  color: #5EEAD4;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-top: 3px;
+  text-shadow: 0 1px 8px rgba(2, 6, 11, 0.9);
+  padding-left: 0.24em;
+  line-height: 1;
+}
+

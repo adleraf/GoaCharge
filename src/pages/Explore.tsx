@@ -68,7 +68,9 @@ export function Explore() {
         (s) =>
           s.name.toLowerCase().includes(q) ||
           (s.town && s.town.toLowerCase().includes(q)) ||
-          (s.addressLine1 && s.addressLine1.toLowerCase().includes(q))
+          (s.addressLine1 && s.addressLine1.toLowerCase().includes(q)) ||
+          (s.operatorName && s.operatorName.toLowerCase().includes(q)) ||
+          (s.district && s.district.toLowerCase().includes(q))
       );
     }
 

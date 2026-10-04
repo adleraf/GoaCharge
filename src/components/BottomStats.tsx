@@ -24,7 +24,9 @@ export function BottomStats({
   ).length;
 
   const uniqueOperators = new Set(
-    stations.map((s) => s.operatorId).filter((id) => id != null)
+    stations
+      .map((s) => (s.operatorName ? s.operatorName.trim().toLowerCase() : s.operatorId != null ? `ocm-${s.operatorId}` : null))
+      .filter((op): op is string => Boolean(op))
   ).size;
 
   const statItems = [
