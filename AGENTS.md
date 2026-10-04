@@ -198,3 +198,13 @@ Client service
 MapLibre markers
 
 Do not implement later features until the current stage has been verified.
+## Git hygiene
+
+- Never create or commit AI/edit-operation artifacts such as:
+  - step_*.txt
+  - exact_*.txt
+  - full_step_*.json
+- Do not create temporary/debug files in the repository root.
+- Keep temporary files outside the repository.
+- Never run `git commit` or `git push` unless explicitly requested by the user.
+- Before committing, review `git status` and ensure only intentional project files are included.
