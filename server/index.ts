@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
 import { chargersRouter } from "./routes/chargers.js";
+import { routeRouter } from "./routes/route.js";
 
 // Load .env from project root (one level up from server/)
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -17,6 +18,7 @@ app.use(express.json());
 
 // Mount API routes
 app.use("/api/chargers", chargersRouter);
+app.use("/api/route", routeRouter);
 
 // Health check
 app.get("/api/health", (_req, res) => {

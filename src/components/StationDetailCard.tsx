@@ -4,10 +4,13 @@ interface StationDetailCardProps {
   station: GoaChargeStation;
   onClose: () => void;
   onFocusOnMap: () => void;
+  onNavigate?: () => void;
+  isCalculatingRoute?: boolean;
 }
 
-/** Formats standard OCM connector type IDs into clean readable names */
-function getConnectorTypeName(typeId: number | null): string {
+/** Formats standard connector types into clean readable names */
+function getConnectorTypeName(typeId: number | null, customName?: string | null): string {
+  if (customName) return customName;
   switch (typeId) {
     case 33:
       return "CCS-2 (DC)";
@@ -41,6 +44,8 @@ export function StationDetailCard({
   station,
   onClose,
   onFocusOnMap,
+  onNavigate,
+  isCalculatingRoute = false,
 }: StationDetailCardProps) {
   // Compute max power available at this station
   const maxPower = station.connections.reduce<number | null>((max, c) => {
@@ -130,7 +135,7 @@ export function StationDetailCard({
                 return (
                   <div key={c.id || i} className="connection-card">
                     <div className="connection-type">
-                      {getConnectorTypeName(c.connectionTypeId)}
+                      {getConnectorTypeName(c.connectionTypeId, c.connectorTypeName)}
                     </div>
                     <div className="connection-specs">
                       {c.powerKW && <span className="spec-item"><strong>{c.powerKW} kW</strong></span>}
@@ -164,10 +169,24 @@ export function StationDetailCard({
 
         {/* Operator & Metadata */}
         <div className="detail-section meta-section">
-          {station.operatorId != null && (
+          {(station.operatorName || station.operatorId != null) && (
             <div className="meta-row">
               <span className="meta-label">Operator:</span>
-              <span className="meta-val">OCM Operator #{station.operatorId}</span>
+              <span className="meta-val">
+                {station.operatorName || `OCM Operator #${station.operatorId}`}
+              </span>
+            </div>
+          )}
+          {station.ownership && (
+            <div className="meta-row">
+              <span className="meta-label">Ownership:</span>
+              <span className="meta-val">{station.ownership}</span>
+            </div>
+          )}
+          {station.district && (
+            <div className="meta-row">
+              <span className="meta-label">District:</span>
+              <span className="meta-val">{station.district}</span>
             </div>
           )}
           {formattedDate && (
@@ -178,7 +197,13 @@ export function StationDetailCard({
           )}
           <div className="meta-row">
             <span className="meta-label">Data Source:</span>
-            <span className="meta-val source-badge">Open Charge Map (OCM #{station.ocmId})</span>
+            <span className="meta-val source-badge">
+              {station.sources && station.sources.length > 1
+                ? "Combined (OCM + BEE)"
+                : station.source === "bee"
+                ? `BEE Goa Registry (${station.beeId || station.uuid})`
+                : `Open Charge Map (OCM #${station.ocmId})`}
+            </span>
           </div>
         </div>
 
@@ -189,29 +214,58 @@ export function StationDetailCard({
             <line x1="12" y1="16" x2="12" y2="12"></line>
             <line x1="12" y1="8" x2="12.01" y2="8"></line>
           </svg>
-          <span>Catalog data verified via Open Charge Map. Real-time bay occupancy is not provided by the public registry.</span>
+          <span>
+            {station.source === "bee"
+              ? "Catalog data from Bureau of Energy Efficiency (BEE) registry. Real-time bay occupancy is not provided by the public registry."
+              : station.sources && station.sources.length > 1
+              ? "Cross-referenced catalog data verified via Open Charge Map and BEE registry. Real-time bay occupancy is not provided by the public registry."
+              : "Catalog data verified via Open Charge Map. Real-time bay occupancy is not provided by the public registry."}
+          </span>
         </div>
       </div>
 
       {/* Actions */}
       <div className="station-detail-actions">
-        <button className="primary-action-btn" onClick={onFocusOnMap}>
+        {onNavigate && (
+          <button
+            className="primary-action-btn navigate-action-btn"
+            onClick={onNavigate}
+            disabled={isCalculatingRoute}
+          >
+            {isCalculatingRoute ? (
+              <>
+                <span className="spinner-icon"></span>
+                Calculating Route...
+              </>
+            ) : (
+              <>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                Navigate
+              </>
+            )}
+          </button>
+        )}
+        <button className="secondary-action-btn" onClick={onFocusOnMap}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="12" cy="12" r="3"></circle>
             <path d="M12 2v3m0 14v3M2 12h3m14 0h3"></path>
           </svg>
-          View on Map
+          Focus
         </button>
         <a
-          className="secondary-action-btn"
+          className="icon-action-btn"
           href={`https://www.google.com/maps/dir/?api=1&destination=${station.latitude},${station.longitude}`}
           target="_blank"
           rel="noopener noreferrer"
+          title="Open in Google Maps"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
           </svg>
-          Directions
         </a>
       </div>
     </div>

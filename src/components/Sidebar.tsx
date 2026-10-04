@@ -137,16 +137,22 @@ export function Sidebar({
 
                   <div className="card-footer-row">
                     <span className="card-connectors">
-                      {st.connections.length > 0
+                      {st.operatorName
+                        ? st.operatorName
+                        : st.connections.length > 0
                         ? `${st.connections.length} connector${st.connections.length > 1 ? 's' : ''}`
                         : 'Standard plug'}
                     </span>
-                    {st.statusTypeId === 50 && (
+                    {st.operatorName && st.connections.length > 0 ? (
+                      <span className="card-connector-count">
+                        {st.connections.length} connector{st.connections.length > 1 ? 's' : ''}
+                      </span>
+                    ) : st.statusTypeId === 50 ? (
                       <span className="card-status-dot" title="Operational in OCM directory">
                         <span className="dot-pulse"></span>
                         Operational
                       </span>
-                    )}
+                    ) : null}
                   </div>
                 </div>
               );

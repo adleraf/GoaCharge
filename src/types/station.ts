@@ -2,43 +2,61 @@
  * GoaCharge normalized charging-station data model.
  *
  * This is the application's internal representation of a charging station,
- * normalized from the Open Charge Map (OCM) API response. It intentionally
- * does NOT mirror OCM's structure — fields are flattened and renamed for
- * clarity within the GoaCharge domain.
+ * normalized from multiple data sources (Open Charge Map, BEE Goa dataset,
+ * and potentially others in the future).
  *
- * Fields OCM may not provide are typed as `T | null`.
- * We never invent values — if OCM omits a field, it stays null.
+ * Fields a source may not provide are typed as `T | null`.
+ * We never invent values — if a source omits a field, it stays null.
  */
 
 // ─── Connection / Connector ────────────────────────────────────────────
 
 export interface StationConnection {
-  /** OCM connection ID */
+  /** Connection ID (OCM ID or auto-generated index for non-OCM sources) */
   id: number;
-  /** OCM connection type ID (e.g. 33 = CCS Type 2) */
+  /** OCM connection type ID (e.g. 33 = CCS Type 2) — null for non-OCM */
   connectionTypeId: number | null;
   /** Power output in kilowatts */
   powerKW: number | null;
   /** Number of connectors of this type */
   quantity: number | null;
-  /** OCM status type ID for this connection */
+  /** OCM status type ID for this connection — null for non-OCM */
   statusTypeId: number | null;
-  /** OCM charging level ID (1 = Level 1, 2 = Level 2, 3 = Level 3 / DC Fast) */
+  /** OCM charging level ID (1 = Level 1, 2 = Level 2, 3 = Level 3 / DC Fast) — null for non-OCM */
   levelId: number | null;
-  /** OCM current type ID (10 = AC single phase, 20 = AC three phase, 30 = DC) */
+  /** OCM current type ID (10 = AC single phase, 20 = AC three phase, 30 = DC) — null for non-OCM */
   currentTypeId: number | null;
+  /** Human-readable connector type name (populated by BEE, null for OCM) */
+  connectorTypeName?: string | null;
+}
+
+// ─── Source reference for merged stations ──────────────────────────────
+
+export type StationSourceType = "openchargemap" | "bee";
+
+export interface StationSourceRef {
+  /** Which data source this reference comes from */
+  source: StationSourceType;
+  /** The original ID from that source (OCM numeric ID or BEE string ID) */
+  sourceId: string;
+  /** Human-readable source label */
+  sourceLabel: string;
 }
 
 // ─── Station ───────────────────────────────────────────────────────────
 
 export interface GoaChargeStation {
-  /** OCM station ID — the external primary key */
+  /**
+   * Stable numeric station ID used as the primary key in the frontend.
+   * For OCM stations this is the OCM ID. For BEE-only stations this is
+   * a deterministic hash of the BEE record ID.
+   */
   ocmId: number;
-  /** OCM UUID */
+  /** OCM UUID or generated UUID for non-OCM sources */
   uuid: string;
 
   // ── Location ──────────────────────────────────────────────────────
-  /** Human-readable station name (OCM AddressInfo.Title) */
+  /** Human-readable station name */
   name: string;
   latitude: number;
   longitude: number;
@@ -47,53 +65,75 @@ export interface GoaChargeStation {
   town: string | null;
   stateOrProvince: string | null;
   postcode: string | null;
-  /** Distance from query center in km (as returned by OCM) */
+  /** Distance from query center in km (as returned by OCM, null for BEE) */
   distanceKM: number | null;
 
   // ── Operator ──────────────────────────────────────────────────────
-  /** OCM operator ID */
+  /** OCM operator ID — null for BEE-only stations */
   operatorId: number | null;
+  /** Human-readable operator / CPO name (populated by BEE, null for OCM-only) */
+  operatorName?: string | null;
+  /** Ownership type (e.g. "Private", "Government") — from BEE */
+  ownership?: string | null;
+  /** District — from BEE */
+  district?: string | null;
 
   // ── Charging ──────────────────────────────────────────────────────
   /** Connectors / plugs available at this station */
   connections: StationConnection[];
-  /** Total number of charging points (OCM NumberOfPoints) */
+  /** Total number of charging points */
   numberOfPoints: number | null;
-  /** Usage cost as a free-text string from OCM */
+  /** Usage cost as a free-text string */
   usageCost: string | null;
-  /** OCM usage type ID (1 = public, 4 = private, etc.) */
+  /** OCM usage type ID (1 = public, 4 = private, etc.) — null for non-OCM */
   usageTypeId: number | null;
 
   // ── Status ────────────────────────────────────────────────────────
-  /** OCM status type ID (e.g. 50 = Operational) */
+  /** OCM status type ID (e.g. 50 = Operational) — null for non-OCM */
   statusTypeId: number | null;
 
   // ── Provenance ────────────────────────────────────────────────────
-  /** Data source attribution */
-  source: "openchargemap";
-  /** OCM data provider ID */
-  dataProviderId: number;
-  /** ISO timestamp — when OCM last verified this station */
+  /** Primary data source attribution */
+  source: StationSourceType;
+  /** BEE record ID — present for stations sourced from BEE data */
+  beeId?: string | null;
+  /** OCM data provider ID — null for non-OCM sources */
+  dataProviderId: number | null;
+  /** ISO timestamp — when last verified (OCM) */
   dateLastVerified: string | null;
-  /** ISO timestamp — last status update in OCM */
+  /** ISO timestamp — last status update */
   dateLastStatusUpdate: string | null;
-  /** ISO timestamp — when the record was created in OCM */
+  /** ISO timestamp — when the record was created */
   dateCreated: string | null;
+
+  /**
+   * When a station has been matched across multiple sources,
+   * this array lists all source references. Absent for single-source stations.
+   */
+  sources?: StationSourceRef[];
 }
 
 // ─── API response wrapper ──────────────────────────────────────────────
 
 export interface ChargersApiResponse {
   stations: GoaChargeStation[];
-  /** Total stations returned after Goa filtering */
+  /** Total unique stations returned after deduplication */
   count: number;
-  /** Metadata about the query and source */
+  /** Metadata about the query and sources */
   meta: {
-    source: "openchargemap";
-    /** Number of raw results from OCM before Goa filtering */
-    rawCount: number;
-    /** Number of results filtered out (not in Goa) */
-    filteredOut: number;
+    /** Primary source identifier (kept for backward compat) */
+    source: "combined";
+    /** Per-source breakdown */
+    ocm: {
+      rawCount: number;
+      filteredOut: number;
+      goaCount: number;
+    };
+    bee: {
+      totalRecords: number;
+    };
+    /** How many stations were detected as duplicates across sources */
+    duplicatesDetected: number;
     /** ISO timestamp of when this response was generated */
     fetchedAt: string;
   };

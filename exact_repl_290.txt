@@ -1,0 +1,159 @@
+      if (stateLabelMarkerRef.current) {
+        stateLabelMarkerRef.current.remove();
+        stateLabelMarkerRef.current = null;
+      }
+      activeMarkersRef.current.forEach((m) => m.remove());
+      activeMarkersRef.current = [];
+      map.current?.remove();
+      map.current = null;
+    };
+  }, []);
+
+  // Render clustered or individual station markers based on viewport zoom
+  const renderMarkers = useCallback(() => {
+    if (!map.current) return;
+
+    // Clear previous markers
+    activeMarkersRef.current.forEach((m) => m.remove());
+    activeMarkersRef.current = [];
+
+    const zoom = map.current.getZoom();
+    const shouldCluster = zoom < 12.8;
+
+    interface ClusterGroup {
+      isCluster: boolean;
+      longitude: number;
+      latitude: number;
+      stations: GoaChargeStation[];
+      station?: GoaChargeStation;
+    }
+
+    const clusters: ClusterGroup[] = [];
+
+    if (!shouldCluster) {
+      // Direct 1-to-1 stations at high zoom
+      stations.forEach((s) => {
+        clusters.push({
+          isCluster: false,
+          longitude: s.longitude,
+          latitude: s.latitude,
+          stations: [s],
+          station: s,
+        });
+      });
+    } else {
+      // Spatial distance clustering based on screen pixel proximity (~42px)
+      const pixelThreshold = 42;
+
+      stations.forEach((station) => {
+        const pt = map.current!.project([station.longitude, station.latitude]);
+
+        let closest: ClusterGroup | null = null;
+        let minDist = pixelThreshold;
+
+        for (const c of clusters) {
+          const cPt = map.current!.project([c.longitude, c.latitude]);
+          const d = Math.hypot(pt.x - cPt.x, pt.y - cPt.y);
+          if (d < minDist) {
+            minDist = d;
+            closest = c;
+          }
+        }
+
+        if (closest) {
+          closest.stations.push(station);
+          closest.isCluster = true;
+          const count = closest.stations.length;
+          closest.longitude = (closest.longitude * (count - 1) + station.longitude) / count;
+          closest.latitude = (closest.latitude * (count - 1) + station.latitude) / count;
+        } else {
+          clusters.push({
+            isCluster: false,
+            longitude: station.longitude,
+            latitude: station.latitude,
+            stations: [station],
+            station,
+          });
+        }
+      });
+    }
+
+    // Render clusters and individual pins
+    clusters.forEach((c) => {
+      if (c.isCluster) {
+        const hasSelected = c.stations.some((s) => s.ocmId === selectedStationId);
+        const el = document.createElement("div");
+        el.className = `ev-cluster-marker ${hasSelected ? "has-selected" : ""}`;
+        el.setAttribute("role", "button");
+        el.setAttribute("tabindex", "0");
+        el.setAttribute("aria-label", `${c.stations.length} charging stations`);
+        el.innerHTML = `<span class="ev-cluster-count">${c.stations.length}</span>`;
+
+        el.addEventListener("click", (e) => {
+          e.stopPropagation();
+          map.current?.flyTo({
+            center: [c.longitude, c.latitude],
+            zoom: Math.min((map.current?.getZoom() ?? 10) + 2.2, 14.5),
+            duration: 650,
+            essential: true,
+          });
+        });
+
+        const marker = new maplibregl.Marker({ element: el, anchor: "center" })
+          .setLngLat([c.longitude, c.latitude])
+          .addTo(map.current!);
+
+        activeMarkersRef.current.push(marker);
+      } else if (c.station) {
+        const station = c.station;
+        const isSelected = station.ocmId === selectedStationId;
+        const el = document.createElement("div");
+        el.className = `ev-map-marker ${isSelected ? "selected" : ""}`;
+        el.setAttribute("role", "button");
+        el.setAttribute("tabindex", "0");
+        el.setAttribute("aria-label", `${station.name} (${station.town || "Goa"})`);
+
+        const maxPower = station.connections.reduce<number | null>(
+          (max, conn) =>
+            conn.powerKW != null
+              ? max == null
+                ? conn.powerKW
+                : Math.max(max, conn.powerKW)
+              : max,
+          null
+        );
+
+        // Hide numeric labels by default to prevent map clutter; display power badge only on selected station
+        el.innerHTML = `
+          <div class="marker-pulse-ring"></div>
+          <div class="marker-pin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          ${isSelected && maxPower ? `<div class="marker-badge">${maxPower} kW</div>` : ""}
+        `;
+
+        el.addEventListener("click", (e) => {
+          e.stopPropagation();
+          onSelectStation(station);
+        });
+
+        const marker = new maplibregl.Marker({ element: el, anchor: "bottom" })
+          .setLngLat([station.longitude, station.latitude])
+          .addTo(map.current!);
+
+        activeMarkersRef.current.push(marker);
+      }
+    });
+  }, [stations, selectedStationId, onSelectStation]);
+
+  // Keep renderMarkersRef updated for moveend listener
+  useEffect(() => {
+    renderMarkersRef.current = renderMarkers;
+  }, [renderMarkers]);
+
+  // Re-render markers when stations or selection changes
+  useEffect(() => {
+    renderMarkers();
+  }, [renderMarkers]);

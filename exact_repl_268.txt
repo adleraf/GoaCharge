@@ -1,0 +1,75 @@
+/* ── Central Goa Branding Map Label ───────────────────────────────── */
+.goa-central-label {
+  pointer-events: none !important;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.35s ease;
+  z-index: 0 !important;
+}
+
+.goa-central-label-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.38em;
+  color: rgba(241, 245, 249, 0.75);
+  text-transform: uppercase;
+  text-shadow: 0 2px 14px rgba(2, 6, 11, 0.95), 0 0 24px rgba(20, 184, 166, 0.35);
+  padding-left: 0.38em;
+  line-height: 1.2;
+}
+
+.goa-central-label-subtitle {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: #5EEAD4;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-top: 3px;
+  text-shadow: 0 1px 8px rgba(2, 6, 11, 0.9);
+  padding-left: 0.22em;
+  line-height: 1;
+}
+
+/* ── EV Station Cluster Markers ───────────────────────────────────── */
+.ev-cluster-marker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(13, 148, 136, 0.9);
+  border: 2px solid #5EEAD4;
+  box-shadow: 0 0 14px rgba(20, 184, 166, 0.5), 0 2px 8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, background 0.2s ease;
+  user-select: none;
+  z-index: 5;
+}
+
+.ev-cluster-marker:hover {
+  transform: scale(1.15);
+  background: rgba(20, 184, 166, 0.98);
+  box-shadow: 0 0 20px rgba(94, 234, 212, 0.75), 0 4px 12px rgba(0, 0, 0, 0.85);
+  z-index: 10;
+}
+
+.ev-cluster-marker.has-selected {
+  border-color: #ffffff;
+  box-shadow: 0 0 22px rgba(94, 234, 212, 0.9), 0 0 0 4px rgba(20, 184, 166, 0.35);
+}
+
+.ev-cluster-count {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
