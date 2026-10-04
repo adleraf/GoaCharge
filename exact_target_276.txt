@@ -1,0 +1,36 @@
+import { useEffect, useRef } from "react";
+import * as maplibregl from "maplibre-gl";
+import "maplibre-gl/dist/maplibre-gl.css";
+import type { GoaChargeStation } from "../types/station";
+import type { RouteData } from "../services/routeService";
+
+interface GoaMapProps {
+  stations: GoaChargeStation[];
+  selectedStationId: number | null;
+  onSelectStation: (station: GoaChargeStation) => void;
+  flyToCoords?: [number, number] | null;
+  activeRoute?: RouteData | null;
+  isNavigating?: boolean;
+  onFitRoute?: () => void;
+}
+
+const GOA_CENTER: [number, number] = [74.05, 15.35];
+const GOA_DEFAULT_ZOOM = 9.8;
+
+export default function GoaMap({
+  stations,
+  selectedStationId,
+  onSelectStation,
+  flyToCoords,
+  activeRoute,
+  isNavigating = false,
+}: GoaMapProps) {
+  const mapContainer = useRef<HTMLDivElement | null>(null);
+  const map = useRef<maplibregl.Map | null>(null);
+  const markersRef = useRef<Map<number, { marker: maplibregl.Marker; el: HTMLDivElement }>>(
+    new Map()
+  );
+  const userMarkerRef = useRef<maplibregl.Marker | null>(null);
+  const perimeterAnimRef = useRef<number | null>(null);
+  const stateLabelMarkerRef = useRef<maplibregl.Marker | null>(null);
+  const pulseGoaBoundaryRef = useRef<(() => void) | null>(null);
